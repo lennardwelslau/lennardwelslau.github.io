@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 1280px;
+}
+
+.navbar {
+  background-color: #000000;
+  border-radius: 2px;
+  max-width: 1280px;
+}
+
+.navbar a {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
