@@ -58,10 +58,6 @@ nav ul li a:hover {
   color: lightgrey;
 }
 
-.scrolled ul li a:hover {
-  color: white;
-}
-
 /* About section styles */
 #about {
   margin-top: 60px; /* Adjust the space between navigation bar and title */
