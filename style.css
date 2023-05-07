@@ -51,11 +51,11 @@ nav ul li a:hover {
 }
 
 .scrolled {
-  background-color: LightGray;
+  background-color: Gray;
 }
 
 .scrolled ul li a {
-  background-color: LightGray;
+  background-color: Gray;
   color: white;
 }
 
@@ -85,7 +85,7 @@ nav ul li a:hover {
 }
 
 footer {
-  background-color: LightGray;
+  background-color: Gray;
   color: white;
   padding: 0px 0;
   text-align: center;
