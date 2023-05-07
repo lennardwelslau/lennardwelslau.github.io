@@ -1,3 +1,4 @@
+// Call scroll attributes to navbar
 $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 0) {
@@ -7,3 +8,4 @@ $(document).ready(function() {
     }
   });
 });
+
