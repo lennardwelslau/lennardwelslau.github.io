@@ -53,10 +53,9 @@ nav ul li a:hover {
 
 .scrolled {
   background-color: grey;
-  color: white;
 }
 
-.scrolled a {
+.scrolled ul li a {
   color: white;
 }
 
