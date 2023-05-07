@@ -47,18 +47,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: black;
-}
-
-.scrolled {
-  background-color: darkgrey;
-}
-
-.scrolled ul li a {
   color: lightgrey;
 }
 
-.scrolled ul li a:hover {
+.scrolled {
+  background-color: grey;
+  color: white;
+}
+
+.scrolled ul li a {
   color: white;
 }
 
