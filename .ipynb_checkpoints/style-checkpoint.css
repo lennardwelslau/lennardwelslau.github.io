@@ -91,6 +91,7 @@ nav ul li a:hover {
   }
 }
 
+/* Adjusted about section for mobile */
 @media (max-width: 768px) {
   .about-image {
     flex-direction: column;
@@ -121,6 +122,28 @@ nav ul li a:hover {
   }
 }
 
+/* Adjusted navigation bar styles for mobile */
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    padding: 5px;
+  }
+}
+
+/* Footer */
 footer {
   background-color: Gray;
   color: white;
