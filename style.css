@@ -55,6 +55,10 @@ nav ul li a:hover {
 }
 
 .scrolled ul li a {
+  color: lightgrey;
+}
+
+.scrolled ul li a:hover {
   color: white;
 }
 
