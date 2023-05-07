@@ -84,6 +84,11 @@ nav ul li a:hover {
   margin-top: 20px;
 }
 
+/* Research section styles */
+.bibliography li {
+  margin-bottom: 10px;
+}
+
 /* Footer */
 footer {
   background-color: Gray;
