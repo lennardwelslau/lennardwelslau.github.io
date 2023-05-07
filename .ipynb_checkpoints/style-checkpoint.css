@@ -50,11 +50,15 @@ nav ul li a:hover {
   color: black;
 }
 
-.scrolled {
+nav.scrolled {
   background-color: grey;
 }
 
-.scrolled ul li a {
+nav.scrolled ul li a {
+  color: #E8E8E8;
+}
+
+nav.scrolled ul li a:hover {
   color: white;
 }
 
