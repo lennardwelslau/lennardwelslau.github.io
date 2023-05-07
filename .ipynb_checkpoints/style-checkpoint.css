@@ -51,13 +51,12 @@ nav ul li a:hover {
 }
 
 .scrolled {
-  background-color: grey;
+  background-color: LightGray;
 }
 
 .scrolled ul li a {
   color: white;
 }
-
 
 /* About section styles */
 #about {
