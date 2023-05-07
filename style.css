@@ -84,6 +84,18 @@ nav ul li a:hover {
   margin-top: 20px;
 }
 
+/* Footer */
+footer {
+  background-color: Gray;
+  color: white;
+  padding: 0px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
 /* Adjusted container styles for mobile */
 @media (max-width: 768px) {
   .container {
@@ -130,23 +142,18 @@ nav ul li a:hover {
     text-align: center;
   }
 
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   nav ul li {
-    margin-bottom: 10px;
+    margin: 0 10px;
   }
 
   nav ul li a {
     padding: 5px;
   }
-}
-
-/* Footer */
-footer {
-  background-color: Gray;
-  color: white;
-  padding: 0px 0;
-  text-align: center;
-}
-
-footer p {
-  margin: 0;
 }
