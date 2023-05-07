@@ -52,8 +52,8 @@ nav ul li a:hover {
 }
 
 .scrolled {
-  background-color: grey;
-  color: white;
+  background-color: grey !important;
+  color: white !important;
 }
 
 /* About section styles */
