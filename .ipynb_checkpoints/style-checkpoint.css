@@ -130,10 +130,6 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  nav ul {
-    flex-direction: column;
-  }
-
   nav ul li {
     margin-bottom: 10px;
   }
