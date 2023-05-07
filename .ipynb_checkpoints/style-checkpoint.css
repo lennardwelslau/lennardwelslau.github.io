@@ -55,12 +55,9 @@ nav ul li a:hover {
 }
 
 .scrolled ul li a {
-  color: #E8E8E8;
-}
-
-.scrolled ul li a:hover {
   color: white;
 }
+
 
 /* About section styles */
 #about {
