@@ -84,6 +84,43 @@ nav ul li a:hover {
   margin-top: 20px;
 }
 
+/* Adjusted container styles for mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-links {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .about-links p {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-description {
+    text-align: justify;
+  }
+}
+
 footer {
   background-color: Gray;
   color: white;
@@ -93,19 +130,4 @@ footer {
 
 footer p {
   margin: 0;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-  }
-
-  .about-image {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .about-links {
-    text-align: center;
-  }
 }
