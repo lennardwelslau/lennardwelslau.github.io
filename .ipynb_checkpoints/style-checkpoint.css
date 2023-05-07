@@ -47,16 +47,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: lightgrey;
+  color: black;
 }
 
 .scrolled {
   background-color: darkgrey;
-  color: white;
 }
 
 .scrolled ul li a {
   color: lightgrey;
+}
+
+.scrolled ul li a:hover {
+  color: white;
 }
 
 /* About section styles */
