@@ -94,3 +94,18 @@ footer {
 footer p {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about-links {
+    text-align: center;
+  }
+}
