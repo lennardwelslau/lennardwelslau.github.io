@@ -1,0 +1,206 @@
+\documentclass[A4,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage{baskervillef}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+
+%for publications
+\usepackage[
+backend=bibtex8, natbib,
+style=authoryear,
+sorting=nyt,
+maxcitenames=2,
+citestyle=authoryear
+]{biblatex}
+\addbibresource{bibliography.bib}
+\renewcommand*{\bibfont}{\small}
+%\DefineBibliographyStrings{ngerman}{%
+%\usepackage[style = chicago-authordate,backend=biber, maxcitenames=2, maxbibnames = 99]{biblatex}
+%\renewcommand*{\nameyeardelim}{\addcomma\space}
+\DefineBibliographyStrings{UKenglish}{%
+andothers = {et al.,}}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.0in}
+\addtolength{\topmargin}{0.2in}
+\addtolength{\textheight}{0.0in}
+
+
+\urlstyle{same}
+
+%\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\it\vspace{-5pt}}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\Subheading}[5]{   
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\textit{\small #2} & \small #3 
+      \end{tabular*} \\
+      \small #4 \\
+    \vspace{7pt}
+    }
+    
+\begin{document}
+
+
+\begin{center}
+    {\Large Lennard Alexander Welslau} \\ 
+%Tel.: +45 918 055 30 $|$   
+    \href{mailto:lennard.welslau@gmail.com}{lennard.welslau@gmail.com} $|$ \href{https://lennardwelslau.github.io/}{lennardwelslau.github.io}
+
+\end{center}
+
+
+%--------EDUCATION--------
+\section{Education}
+    \Subheading
+        {University of Copenhagen}{, Copenhagen, Denmark}{09/2019 - 09/2022}
+        {M.Sc. Economics (GPA: 10.5, top decile) \\
+        - Thesis: Wage flexibility and external shocks in an open economy HANK model (Supervisor: Jeppe Druedahl; FG: 12, excellent) \href{https://lennardwelslau.github.io/Welslau_MA_Thesis_2022_Wage_Flexibility_Open_Economy_HANK.pdf}{\scriptsize\faExternalLink} \\
+        - Seminar papers: SVAR analysis of unconventional monetary policy and inequality, Comparative analysis of European growth models during the pandemic}
+
+    \Subheading
+        {University College Freiburg}{, Freiburg, Germany}{10/2014 - 08/2018}
+        {B.A. Liberal Arts and Sciences (GPA: 1.5, excellent) \\
+        - Courses in philosophy, politics, and economics \\
+        - Thesis: Philosophy of science and the evolution of finance theory (Supervisor: Lars Feld; FG: 1.0, excellent)}
+
+    \Subheading
+        {Universidad de Buenos Aires}{, Buenos Aires, Argentina}{03/2017 - 07/2017}
+        {Courses in human rights, development economics, international economics}
+
+    \Subheading
+        {Harvard Summer School}{, Freiburg, Germany}{06/2016 - 08/2016}
+        {Courses in sustainability, science and technology studies}
+
+%--------Work EXPERIENCE--------
+\section{Work Experience}
+    \Subheading
+        {Bruegel}{, Brussels, Belgium}{Since 10/2022}
+        {Research Assistant -- Data analysis and visualization, database automation, model building, co-authored various publications (macroeconomics, EU governance, trade), presented research externally (Python, R, Excel)}{}
+
+    \Subheading
+        {Konrad Adenauer Stiftung}{, Panama City, Panama}{11/2021 - 01/2022}
+        {Economic Research Consultant -- Co-authored chapter on US-China trade tension spillovers (Stata, Python)}
+            
+    \Subheading
+        {United Nations ECLAC}{, Washington DC, USA}{06/2021 - 10/2021}
+        {Economic Affairs Consultant -- Co-authored paper on export competition using augmented gravity models (Stata, Python)}
+
+    \Subheading
+        {United Nations ECLAC}{, Washington DC, USA}{09/2020 - 03/2021}
+        {Carlo Schmid Fellow -- Literature review, trade data analysis, drafted news and policy briefs  (Stata)}
+
+    \Subheading
+        {Copenhagen Business School}{, Washington DC, USA}{01/2020 - 09/2021}
+        {Research Assistant -- EU-Horizon 2020 circular economy project, drafted reports and resources for SMEs and policymakers}
+
+    \Subheading
+        {European Central Bank}{, Frankfurt am Main, Germany}{09/2018 - 03/2019}
+        {Trainee, Market Infrastructure and Payments -- Release and risk management, descriptive statistics, drafted strategy and legal documents, presented to senior management}
+
+    \Subheading
+        {Walter Eucken Institute}{, Freiburg, Germany}{03/2018 - 09/2018}
+        {Research Assistant -- Literature review, translation, data analysis, administrative tasks (R)}
+
+    \Subheading
+        {Benteler Automotive}{, Puebla, Mexico}{01/2014 - 05/2014}
+        {Intern, Global Supply Chain Management -- Material traceability project, hardware and software testing, trained local staff}
+
+\newpage
+%--------PUBLICATIONS--------
+\section{Selected Publications}
+\setlength\bibitemsep{1.4\itemsep}
+\begin{refsection}[citations.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+      
+%--------ADDITIONAL EXPERIENCE--------
+\section{Additional Experience}
+
+    \Subheading
+      {Kritiske Politter}{, Copenhagen, Denmark}{09/2019 – 09/2020}
+      {Economics reading circles, invited speaker seminars}
+
+    \Subheading
+      {TriRhena Consulting}{, Freiburg, Germany}{04/2015 – 08/2016}
+      {Social network analysis, balance sheet analysis}
+
+    \Subheading
+    {Geneva Model United Nations}{, Geneva, Switzerland}{04/2015 – 09/2015}
+    {MUN Delegate to the Legal Committee}
+
+%    \Subheading
+%      {University College Freiburg Student Council}{, Freiburg, Germany}{10/2014 – 08/2016}
+%      {Student representative in the Committee of Outreach}
+
+%    \Subheading
+%      {Sonati}{, Estelí, Nicaragua}{09/2013}
+%      {Volunteer with environmental education non-profit}
+
+    \Subheading
+       {FT 1844 Freiburg e.V.}{, Freiburg, Germany}{07/2009 – 08/2018}
+       {Competitive volleyball player}
+
+%--------OTHER--------
+\section{Skills}% and Interests}
+
+    \Subheading
+    {Languages}{}{}
+    {- German (native); 
+    English, 
+    Spanish (fluent); 
+    Danish, French (basic); 
+    Latin (diploma)\\
+    - Python, Stata, Excel (advanced); 
+    Matlab, R, Git, \LaTeX\space(intermediate); 
+    SQL, Java/ TypeScript, HTML (basic)}
+    
+    \Subheading
+    {Certificates}{}{}
+    {GRE (Quant 161/170 Verbal 157/170 Analytical 5.0/6),  
+    PM$^2$ (European Commission Project Management Methodology C1 - C4)}
+    
+    \Subheading
+    {Awards}{}{}
+    {Carlo Schmid scholarship (DAAD, German Academic Scholarship Foundation), 
+    DAAD scholarship, 
+    UCPH International scholarship, 
+    e-fellows.net scholarship, 
+    McKinsey Firsthand membership} 
+
+    \Subheading
+    {Interests}{}{}
+    {Sports (surfing, swimming, running), travel (>1 year in Europe, Latin America, North Africa, West Asia), data science, international affairs, political theory}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
