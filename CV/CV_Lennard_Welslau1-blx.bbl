@@ -168,6 +168,44 @@
     \field{year}{2023}
   \endentry
 
+  \entry{fiscal_rules}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=DZ}{%
+         family={Darvas},
+         familyi={D\bibinitperiod},
+         given={Zsolt},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WL}{%
+         family={Welslau},
+         familyi={W\bibinitperiod},
+         given={Lennard},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zettelmeyer},
+         familyi={Z\bibinitperiod},
+         given={Jeromin},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DZ+1}
+    \strng{fullhash}{DZWLZJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{note}{Working Paper 16/2023, Bruegel}
+    \field{title}{A quantitative evaluation of the European Commission´s
+  fiscal governance proposal}
+    \verb{url}
+    \verb https://www.bruegel.org/sites/default/files/2023-09/WP%2016_1.pdf
+    \endverb
+    \field{year}{2023}
+  \endentry
+
   \entry{bmz}{misc}{}
     \name{author}{2}{}{%
       {{hash=ZJ}{%
