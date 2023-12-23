@@ -112,13 +112,10 @@ h3 {
 /* Research section styles */
 .bibliography li {
   margin-bottom: 5px; /* Adjust as needed for spacing between entries */
+  padding-left: 1.5em; /* Padding to align wrapped lines with the bullet point */
+  text-indent: -1.5em; /* Negative indentation to align wrapped lines with the bullet point */
 }
-ul.bibliography li::before {
-  content: '\2022'; /* Unicode character for a bullet point (adjust as needed) */
-  color: Black; /* Color of the bullet point */
-  font-size: 20px; /* Adjust as needed */
-  margin-right: 4px; /* Adjust as needed for spacing between the bullet point and text */
-}
+
 
 /* Footer */
 footer {
