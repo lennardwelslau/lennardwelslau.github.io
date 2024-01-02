@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 768px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -79,10 +79,10 @@ nav li:hover {
 }
 
 .about-image img {
-  max-width: 400px;
+  max-width: 500px;
   display: block;
   height: auto;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .about-links {
