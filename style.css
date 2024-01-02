@@ -73,18 +73,26 @@ nav li:hover {
 .about-image {
   display: flex;
   align-items: center;
+  justify-content: left; /* Center the content horizontally */
+  text-align: left;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
 }
 
 .about-image img {
-  max-width: 500px;
+  max-width: 400px;
+  display: block;
   height: auto;
   margin-right: 20px;
 }
 
+.about-links {
+  display: block; 
+  text-align: left;
+}
+
 .about-links a {
-  display: inline;
-    text-decoration: none;
-  margin-bottom: 5px;
+  display: block;
+  text-decoration: none;
 }
 
 .about-description {
