@@ -137,8 +137,15 @@ h3 {
 /* Research section styles */
 .bibliography li {
   margin-bottom: 5px; /* Adjust as needed for spacing between entries */
-  padding-left: 1.5em; /* Padding to align wrapped lines with the bullet point */
-  text-indent: -1.5em; /* Negative indentation to align wrapped lines with the bullet point */
+  position: relative;
+  padding-left: 25px; /* Adjust the padding to control the space between the symbol and the text */
+}
+
+.bibliography li::before {
+  content: '\2022'; /* Unicode character for a bullet (disc) */
+  color: grey; /* Set the color of the disc */
+  position: absolute;
+  left: 5px; /* Adjust the position of the disc */
 }
 
 .bibliography li a {
@@ -153,17 +160,19 @@ h3 {
   text-decoration: underline;
 }
 
-/* Research section styles */
-.project li {
-  margin-bottom: 5px; /* Adjust as needed for spacing between entries */
-}
+/* Code section styles */
 
 .project li {
-  list-style-type: disc;
-  list-style-position: inside;
-  color: grey;
-  padding-left: 1.5em;
-  text-indent: -1.5em
+  margin-bottom: 5px; /* Adjust as needed for spacing between entries */
+  position: relative;
+  padding-left: 25px; /* Adjust the padding to control the space between the symbol and the text */
+}
+
+.project li::before {
+  content: '\2022'; /* Unicode character for a bullet (disc) */
+  color: grey; /* Set the color of the disc */
+  position: absolute;
+  left: 5px; /* Adjust the position of the disc */
 }
 
 .project li a {
