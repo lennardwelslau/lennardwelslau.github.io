@@ -33,6 +33,7 @@ nav {
   width: 100%;
   height: 50px;
   transition: background-color 0.25s ease; /* Add a smooth transition effect for the background color */
+  z-index: 1000; /* Set a higher z-index to keep the navigation bar in the foreground */
 }
 
 nav ul {

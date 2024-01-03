@@ -7,24 +7,23 @@ $(document).ready(function() {
       $('nav').removeClass('scrolled');
     }
   });
-});
 
-$(document).ready(function() {
   // Smooth scrolling for all navigation links
   $('nav a').on('click', function(e) {
-    if (this.hash !== '') {
-      e.preventDefault();
+    e.preventDefault();
 
-      const hash = this.hash;
-      $('html, body').animate(
-        {
-          scrollTop: $(hash).offset().top
-        },
-        800, // Adjust the duration as needed
-        function() {
-          window.location.hash = hash;
-        }
-      );
-    }
+    const hash = this.hash;
+    const targetOffset = $(hash).offset().top - 20 ; // Adjust the offset (5 pixels above the target)
+
+    $('html, body').animate(
+      {
+        scrollTop: targetOffset
+      },
+      800, // Adjust the duration as needed
+      function() {
+        // Update the hash in the URL after scrolling is complete
+        window.location.hash = targetOffset;
+      }
+    );
   });
 });
