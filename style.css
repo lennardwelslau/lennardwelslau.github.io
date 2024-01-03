@@ -96,12 +96,20 @@ nav li:hover {
   text-decoration: none;
 }
 
+.about-links a:hover {
+  text-decoration: underline; 
+}
+
 .about-description {
   margin-top: 20px;
 }
 
-.cv-link {
+.about-description a {
   text-decoration: none;
+}
+
+.about-description a:hover {
+  text-decoration: underline; 
 }
 
 
@@ -123,6 +131,27 @@ h3 {
   margin-bottom: 5px; /* Adjust as needed for spacing between entries */
   padding-left: 1.5em; /* Padding to align wrapped lines with the bullet point */
   text-indent: -1.5em; /* Negative indentation to align wrapped lines with the bullet point */
+}
+
+.bibliography li a {
+  text-decoration: none;
+}
+
+.bibliography li a:hover {
+  text-decoration: underline;
+}
+
+/* Research section styles */
+.project li {
+  margin-bottom: 5px; /* Adjust as needed for spacing between entries */
+}
+
+.project li a {
+  text-decoration: none;
+}
+
+.project li a:hover {
+  text-decoration: underline;
 }
 
 
