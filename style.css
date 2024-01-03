@@ -100,6 +100,10 @@ nav li:hover {
   text-decoration: underline; 
 }
 
+.about-links a:visited {
+  color: blue;
+}
+
 .about-description {
   margin-top: 20px;
 }
@@ -112,6 +116,9 @@ nav li:hover {
   text-decoration: underline; 
 }
 
+.about-description a:visited {
+  color: blue;
+}
 
 h2 {
   text-align: center;
@@ -141,6 +148,10 @@ h3 {
   text-decoration: underline;
 }
 
+.bibliography li a:visited {
+  color: blue;
+}
+
 /* Research section styles */
 .project li {
   margin-bottom: 5px; /* Adjust as needed for spacing between entries */
@@ -154,6 +165,9 @@ h3 {
   text-decoration: underline;
 }
 
+.project li a:visited {
+  color: blue;
+}
 
 /* Footer */
 footer {
