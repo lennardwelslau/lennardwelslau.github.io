@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.2)  17 OCT 2023 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.2)  3 JAN 2024 16:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -824,12 +824,6 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 87.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 87.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 87.
-LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 87.
- (C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesometwo.fd
-File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
-)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -838,7 +832,7 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 93.
  [1
 
-{C:/Users/lennard.welslau/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}{C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/fontawesometwo.enc}]
+{C:/Users/lennard.welslau/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
 \blx@maxsegment@1=\count426
 \blx@sectionciteorder@1=\count427
 Package biblatex Info: Reference section=1 on input line 140.
@@ -863,17 +857,17 @@ Package logreq Info: Writing requests to 'CV_Lennard_Welslau.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21050 strings out of 476331
- 371660 string characters out of 5783046
+ 21037 strings out of 476331
+ 371227 string characters out of 5783046
  1870660 words of memory out of 5000000
- 41196 multiletter control sequences out of 15000+600000
- 699075 words of font info for 72 fonts, out of 8000000 for 9000
+ 41188 multiletter control sequences out of 15000+600000
+ 682725 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,76p,1975b,1733s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\lennard.welslau\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on CV_Lennard_Welslau.pdf (2 pages, 134904 bytes).
+ <C:\Users\lennard.welslau\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on CV_Lennard_Welslau.pdf (2 pages, 126731 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

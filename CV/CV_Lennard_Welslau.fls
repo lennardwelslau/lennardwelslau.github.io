@@ -841,12 +841,6 @@ INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ba
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Bold-tlf-t1.tfm
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Italic-tlf-t1.tfm
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Regular-tlf-t1.tfm
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Regular-tlf-t1.tfm
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\latex\fontawesome\ufontawesometwo.fd
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\latex\fontawesome\ufontawesometwo.fd
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\latex\fontawesome\ufontawesometwo.fd
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\latex\fontawesome\ufontawesometwo.fd
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\fontawesome\FontAwesome--fontawesometwo.tfm
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy7.tfm
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy5.tfm
@@ -865,7 +859,6 @@ INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\vf\public\bas
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Italic-tlf-t1--base.tfm
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\vf\public\baskervillef\BaskervilleF-Regular-tlf-t1.vf
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Regular-tlf-t1--base.tfm
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\fontawesome\fontawesometwo.enc
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\vf\public\baskervillef\BaskervilleF-Bold-tlf-t1.vf
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Bold-tlf-t1--base.tfm
 INPUT CV_Lennard_Welslau1-blx.aux
@@ -895,8 +888,6 @@ INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\baskervillef\BaskervilleF-Italic.pfb
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\baskervillef\BaskervilleF-Regular.pfb
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\baskervillef\BaskervilleF-Regular.pfb
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\fontawesome\FontAwesome.pfb
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\fontawesome\FontAwesome.pfb
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
