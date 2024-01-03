@@ -12,7 +12,7 @@ $(document).ready(function() {
   $('nav a').on('click', function(e) {
     const href = $(this).attr('href');
 
-    // Check if the href starts with a '#' symbol
+    // Check if the href starts with a '#' symbol to exclude direct link
     if (href.startsWith('#')) {
       e.preventDefault();
 
@@ -25,7 +25,7 @@ $(document).ready(function() {
         },
         800,
         function() {
-          window.location.hash = hash;
+          window.location.hash = targetOffset;
         }
       );
     }
