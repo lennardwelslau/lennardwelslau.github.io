@@ -96,12 +96,12 @@ nav li:hover {
   text-decoration: none;
 }
 
-.about-links a:hover {
-  text-decoration: underline; 
-}
-
 .about-links a:visited {
   color: blue;
+}
+
+.about-links a:hover {
+  text-decoration: underline; 
 }
 
 .about-description {
@@ -112,12 +112,12 @@ nav li:hover {
   text-decoration: none;
 }
 
-.about-description a:hover {
-  text-decoration: underline; 
-}
-
 .about-description a:visited {
   color: blue;
+}
+
+.about-description a:hover {
+  text-decoration: underline; 
 }
 
 h2 {
@@ -144,12 +144,12 @@ h3 {
   text-decoration: none;
 }
 
-.bibliography li a:hover {
-  text-decoration: underline;
-}
-
 .bibliography li a:visited {
   color: blue;
+}
+
+.bibliography li a:hover {
+  text-decoration: underline;
 }
 
 /* Research section styles */
@@ -161,12 +161,12 @@ h3 {
   text-decoration: none;
 }
 
-.project li a:hover {
-  text-decoration: underline;
-}
-
 .project li a:visited {
   color: blue;
+}
+
+.project li a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
