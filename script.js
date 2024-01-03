@@ -9,7 +9,7 @@ $(document).ready(function() {
   });
 
   // Smooth scrolling for all navigation links except the CV link
-  $('nav a:not([href="CV/CV_Lennard_Welslau.pdf"])').on('click', function(e) {
+  $('nav a:not([href="CV/CV_Lennard_Welslau.pdf" target="_blank">CV])').on('click', function(e) {
     e.preventDefault();
 
     const hash = this.hash;
