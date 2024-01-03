@@ -10,27 +10,20 @@ $(document).ready(function() {
 
   // Smooth scrolling for all navigation links
   $('nav a').on('click', function(e) {
-    const href = $(this).attr('href');
+    e.preventDefault();
 
-    // Check if the clicked link is for the CV
-    if (href === 'CV/CV_Lennard_Welslau.pdf') {
-      // Directly open the CV file
-      window.open(href, '_blank');
-    } else {
-      e.preventDefault();
+    const hash = this.hash;
+    const targetOffset = $(hash).offset().top - 20 ; // Adjust the offset (5 pixels above the target)
 
-      const hash = this.hash;
-      const targetOffset = $(hash).offset().top - 20;
-
-      $('html, body').animate(
-        {
-          scrollTop: targetOffset
-        },
-        800,
-        function() {
-          window.location.hash = hash;
-        }
-      );
-    }
+    $('html, body').animate(
+      {
+        scrollTop: targetOffset
+      },
+      800, // Adjust the duration as needed
+      function() {
+        // Update the hash in the URL after scrolling is complete
+        window.location.hash = targetOffset;
+      }
+    );
   });
 });
