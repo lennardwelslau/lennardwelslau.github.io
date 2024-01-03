@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.2)  3 JAN 2024 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.2)  3 JAN 2024 17:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -807,48 +807,48 @@ Package biblatex Info: Reference segment=0 on input line 69.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 75.
+(Font)              <10.95> on input line 74.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 75.
+(Font)              <8> on input line 74.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 75.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 75.
+(Font)              <6> on input line 74.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 74.
  (C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 81.
+(Font)              scaled to size 10.95pt on input line 80.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 87.
+(Font)              scaled to size 10.95pt on input line 86.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 87.
+(Font)              scaled to size 10.0pt on input line 86.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 87.
+(Font)              scaled to size 10.0pt on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 93.
+(Font)              <7> on input line 92.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 93.
+(Font)              <5> on input line 92.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 93.
+(Font)              scaled to size 10.0pt on input line 92.
  [1
 
 {C:/Users/lennard.welslau/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
 \blx@maxsegment@1=\count426
 \blx@sectionciteorder@1=\count427
-Package biblatex Info: Reference section=1 on input line 140.
+Package biblatex Info: Reference section=1 on input line 139.
 \openout3 = `CV_Lennard_Welslau1-blx.aux'.
 
-Package biblatex Info: Setting label 'refsection:1' on input line 140.
+Package biblatex Info: Setting label 'refsection:1' on input line 139.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 142.
+(Font)              scaled to size 10.0pt on input line 141.
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family BaskervilleF-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 142.
-Package biblatex Info: Reference section=0 on input line 143.
+(textcomp)             Default family used instead on input line 141.
+Package biblatex Info: Reference section=0 on input line 142.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 185.
+(Font)              scaled to size 7.0pt on input line 157.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 208.
+(Font)              scaled to size 9.0pt on input line 180.
  [2{C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervillef/zba_gmq6ah.enc}] (CV_Lennard_Welslau.aux)
 Package rerunfilecheck Info: File `CV_Lennard_Welslau.out' has not changed.
 (rerunfilecheck)             Checksum: 76EC14CD2D91D5BB991F395336DFD38E;572.
