@@ -32,6 +32,7 @@ nav {
   top: 0;
   width: 100%;
   height: 50px;
+  transition: background-color 0.25s ease; /* Add a smooth transition effect for the background color */
 }
 
 nav ul {
@@ -49,8 +50,8 @@ nav ul li a {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px 50px;
-  transition: font-size 0.25s ease; /* Add a smooth transition effect */
+  padding: 10px 30px;
+  transition: font-size 0.25s ease, background-color 0.25s ease, color 0.25s ease; /* Add a smooth transition effect */
 }
 
 nav li:hover {
@@ -62,8 +63,8 @@ nav li:hover {
 }
 
 .scrolled ul li a {
-  background-color: Gray;
   color: white;
+  transition: color 0.25 ease; /* Add a smooth transition effect for background color, text color, and padding */
 }
 
 /* About section styles */
