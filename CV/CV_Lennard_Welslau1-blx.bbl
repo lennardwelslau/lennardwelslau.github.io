@@ -46,12 +46,10 @@
     \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{note}{ECLAC SERIES 99/23. United Nations}
+    \field{note}{ECLAC SERIES 99/23. United Nations
+  (\href{https://repositorio.cepal.org/handle/11362/48356}{Link to PDF})}
     \field{title}{China and Latin America and the Caribbean: Export competition
   in the United States market}
-    \verb{url}
-    \verb https://repositorio.cepal.org/handle/11362/48356
-    \endverb
     \field{year}{2022}
   \endentry
 
@@ -124,13 +122,11 @@
     \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{note}{Briefing for the Committee on Budgets (BUDG) PE 749.450}
+    \field{note}{Briefing for the Committee on Budgets (BUDG) PE 749.450
+  (\href{https://www.bruegel.org/policy-brief/rising-cost-european-union-borrowing-and-what-do-about-it}{Link
+  to PDF})}
     \field{title}{The rising cost of European Union borrowing and what to do
   about it}
-    \verb{url}
-    \verb https://www.bruegel.org/policy-brief/rising-cost-european-union-borro
-    \verb wing-and-what-do-about-it
-    \endverb
     \field{year}{2023}
   \endentry
 
@@ -158,13 +154,11 @@
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{note}{Economic Governance Support Unit (EGOV) Study PE 741.478.
-  European Parliament}
+  European Parliament
+  (\href{https://www.europarl.europa.eu/thinktank/en/document/IPOL_IDA(2023)741748}{Link
+  to PDF})}
     \field{title}{First lessons from the Recovery and Resilience Facility
   lessons for the EU economic governance framework}
-    \verb{url}
-    \verb https://www.europarl.europa.eu/thinktank/en/document/IPOL_IDA(2023)74
-    \verb 1748
-    \endverb
     \field{year}{2023}
   \endentry
 
@@ -197,12 +191,11 @@
     \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{note}{Working Paper 16/2023, Bruegel}
-    \field{title}{A quantitative evaluation of the European Commission´s
-  fiscal governance proposal}
-    \verb{url}
-    \verb https://www.bruegel.org/sites/default/files/2023-09/WP%2016_1.pdf
-    \endverb
+    \field{note}{Working Paper 16/2023, Bruegel
+  (\href{https://www.bruegel.org/working-paper/quantitative-evaluation-european-commissions-fiscal-governance-proposal}{Link
+  to PDF})}
+    \field{title}{A quantitative evaluation of the European Commission's fiscal
+  governance proposal}
     \field{year}{2023}
   \endentry
 
@@ -230,13 +223,11 @@
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
     \field{note}{Policy Paper for the German Ministry of Economic Cooperation
-  and Development}
+  and Development
+  (\href{https://www.bruegel.org/external-publication/internationale-staatsverschuldung-schuldenrestrukturierungen-und-mogliche}{Link
+  to PDF})}
     \field{title}{Internationale Staatsverschuldung, Schuldenrestrukturierungen
   und mögliche Handlungsoptionen für das BMZ}
-    \verb{url}
-    \verb https://www.bruegel.org/external-publication/internationale-staatsver
-    \verb schuldung-schuldenrestrukturierungen-und-mogliche
-    \endverb
     \field{year}{2023}
   \endentry
 
@@ -281,12 +272,10 @@
     \field{labeldatesource}{}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{note}{Bruegel Policy Brief 10/23}
+    \field{note}{Bruegel Policy Brief 10/23
+  (\href{https://www.bruegel.org/policy-brief/longer-term-fiscal-challenges-facing-european-union}{Link
+  to PDF})}
     \field{title}{The longer-term fiscal challenges facing the European Union}
-    \verb{url}
-    \verb https://www.bruegel.org/policy-brief/longer-term-fiscal-challenges-fa
-    \verb cing-european-union
-    \endverb
     \field{year}{2023}
   \endentry
 \enddatalist

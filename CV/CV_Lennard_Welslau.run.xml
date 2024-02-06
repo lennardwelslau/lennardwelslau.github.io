@@ -87,7 +87,6 @@
       <file>CV_Lennard_Welslau-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>bibliography.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

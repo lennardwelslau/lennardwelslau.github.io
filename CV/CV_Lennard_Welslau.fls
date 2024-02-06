@@ -793,6 +793,7 @@ INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\context\base\mk
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT .\CV_Lennard_Welslau.out
 INPUT CV_Lennard_Welslau.out
 INPUT .\CV_Lennard_Welslau.out
@@ -863,14 +864,8 @@ INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\vf\public\bas
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Bold-tlf-t1--base.tfm
 INPUT CV_Lennard_Welslau1-blx.aux
 OUTPUT CV_Lennard_Welslau1-blx.aux
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Regular-tlf-sc-t1.tfm
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1000.tfm
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti1000.tfm
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Regular-tlf-t1.tfm
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Regular-tlf-t1.tfm
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\vf\public\baskervillef\BaskervilleF-Regular-tlf-sc-t1.vf
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Regular-tlf-sc-t1--base.tfm
-INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\baskervillef\zba_gmq6ah.enc
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\vf\public\baskervillef\BaskervilleF-Regular-tlf-t1.vf
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\tfm\public\baskervillef\BaskervilleF-Regular-tlf-t1--base.tfm
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\vf\public\baskervillef\BaskervilleF-Regular-tlf-t1.vf
@@ -880,8 +875,6 @@ INPUT .\CV_Lennard_Welslau.out
 INPUT .\CV_Lennard_Welslau.out
 INPUT CV_Lennard_Welslau.run.xml
 OUTPUT CV_Lennard_Welslau.run.xml
-INPUT C:\Users\lennard.welslau\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1000.pk
-INPUT C:\Users\lennard.welslau\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1000.pk
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\baskervillef\BaskervilleF-Bold.pfb
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\baskervillef\BaskervilleF-Bold.pfb
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\fonts\type1\public\baskervillef\BaskervilleF-Italic.pfb

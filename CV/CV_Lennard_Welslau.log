@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.2)  6 FEB 2024 01:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.2)  6 FEB 2024 12:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -179,7 +179,9 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip54
-) (C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 14.
+ (C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip55
 \f@nch@O@elh=\skip56
@@ -739,30 +741,30 @@ LaTeX Warning: Unused global option(s):
 (CV_Lennard_Welslau.aux)
 \openout1 = `CV_Lennard_Welslau.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 69.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 73.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 73.
  (C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex/latex/ly1\ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    ... okay on input line 73.
  (C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count418
@@ -777,7 +779,7 @@ LaTeX Font Info:    ... okay on input line 69.
 \makeMPintoPDFobject=\count423
 \everyMPtoPDFconversion=\toks27
 )
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring ON on input line 73.
  (CV_Lennard_Welslau.out) (CV_Lennard_Welslau.out)
 \@outlinefile=\write4
 \openout4 = `CV_Lennard_Welslau.out'.
@@ -802,54 +804,49 @@ Package biblatex Info: ... file 'CV_Lennard_Welslau.bbl' found.
  (CV_Lennard_Welslau.bbl)
 Package biblatex Info: ... file 'CV_Lennard_Welslau1-blx.bbl' found.
  (CV_Lennard_Welslau1-blx.bbl)
-Package biblatex Info: Reference section=0 on input line 69.
-Package biblatex Info: Reference segment=0 on input line 69.
+Package biblatex Info: Reference section=0 on input line 73.
+Package biblatex Info: Reference segment=0 on input line 73.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 73.
+(Font)              scaled to size 14.4pt on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 74.
+(Font)              <10.95> on input line 78.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 78.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 74.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 74.
+(Font)              <6> on input line 78.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 78.
  (C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 80.
+(Font)              scaled to size 10.95pt on input line 84.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 86.
+(Font)              scaled to size 10.95pt on input line 90.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 86.
+(Font)              scaled to size 10.0pt on input line 90.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 86.
+(Font)              scaled to size 10.0pt on input line 90.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 92.
+(Font)              <7> on input line 96.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 92.
+(Font)              <5> on input line 96.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 92.
+(Font)              scaled to size 10.0pt on input line 96.
  [1
 
 {C:/Users/lennard.welslau/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
 \blx@maxsegment@1=\count426
 \blx@sectionciteorder@1=\count427
-Package biblatex Info: Reference section=1 on input line 143.
+Package biblatex Info: Reference section=1 on input line 147.
 \openout3 = `CV_Lennard_Welslau1-blx.aux'.
 
-Package biblatex Info: Setting label 'refsection:1' on input line 143.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 145.
-Package textcomp Info: Symbol \textasciiacute not provided by
-(textcomp)             font family BaskervilleF-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 145.
-Package biblatex Info: Reference section=0 on input line 146.
+Package biblatex Info: Setting label 'refsection:1' on input line 147.
+Package biblatex Info: Reference section=0 on input line 150.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 161.
+(Font)              scaled to size 7.0pt on input line 165.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 184.
- [2{C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervillef/zba_gmq6ah.enc}] (CV_Lennard_Welslau.aux)
+(Font)              scaled to size 9.0pt on input line 188.
+ [2] (CV_Lennard_Welslau.aux)
 Package rerunfilecheck Info: File `CV_Lennard_Welslau.out' has not changed.
 (rerunfilecheck)             Checksum: 76EC14CD2D91D5BB991F395336DFD38E;572.
 Package logreq Info: Writing requests to 'CV_Lennard_Welslau.run.xml'.
@@ -857,17 +854,17 @@ Package logreq Info: Writing requests to 'CV_Lennard_Welslau.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21037 strings out of 476331
- 371194 string characters out of 5783046
- 1870660 words of memory out of 5000000
- 41188 multiletter control sequences out of 15000+600000
- 682725 words of font info for 70 fonts, out of 8000000 for 9000
+ 21021 strings out of 476331
+ 370827 string characters out of 5783046
+ 1871660 words of memory out of 5000000
+ 41177 multiletter control sequences out of 15000+600000
+ 674536 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,1972b,1733s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\lennard.welslau\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on CV_Lennard_Welslau.pdf (2 pages, 126863 bytes).
+ 75i,11n,76p,1971b,1733s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on CV_Lennard_Welslau.pdf (2 pages, 122615 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
