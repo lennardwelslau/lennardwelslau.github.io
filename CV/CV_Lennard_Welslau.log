@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.2)  3 JAN 2024 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.6.2)  6 FEB 2024 01:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/lennard.welslau/Scripts/Lennard Github/lennardwelslau.github.io/CV/CV_Lennard_Welslau.tex"
-(c:/Users/lennard.welslau/Scripts/Lennard Github/lennardwelslau.github.io/CV/CV_Lennard_Welslau.tex
+**"c:/Users/lennard.welslau/Code/Lennard Github/lennardwelslau.github.io/CV/CV_Lennard_Welslau.tex"
+(c:/Users/lennard.welslau/Code/Lennard Github/lennardwelslau.github.io/CV/CV_Lennard_Welslau.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30> (C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -835,20 +835,20 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 {C:/Users/lennard.welslau/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
 \blx@maxsegment@1=\count426
 \blx@sectionciteorder@1=\count427
-Package biblatex Info: Reference section=1 on input line 139.
+Package biblatex Info: Reference section=1 on input line 143.
 \openout3 = `CV_Lennard_Welslau1-blx.aux'.
 
-Package biblatex Info: Setting label 'refsection:1' on input line 139.
+Package biblatex Info: Setting label 'refsection:1' on input line 143.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 141.
+(Font)              scaled to size 10.0pt on input line 145.
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family BaskervilleF-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 141.
-Package biblatex Info: Reference section=0 on input line 142.
+(textcomp)             Default family used instead on input line 145.
+Package biblatex Info: Reference section=0 on input line 146.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 157.
+(Font)              scaled to size 7.0pt on input line 161.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 180.
+(Font)              scaled to size 9.0pt on input line 184.
  [2{C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervillef/zba_gmq6ah.enc}] (CV_Lennard_Welslau.aux)
 Package rerunfilecheck Info: File `CV_Lennard_Welslau.out' has not changed.
 (rerunfilecheck)             Checksum: 76EC14CD2D91D5BB991F395336DFD38E;572.
@@ -858,14 +858,14 @@ Package logreq Info: Writing requests to 'CV_Lennard_Welslau.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  21037 strings out of 476331
- 371227 string characters out of 5783046
- 1870660 words of memory out of 5000000
+ 371194 string characters out of 5783046
+ 1871660 words of memory out of 5000000
  41188 multiletter control sequences out of 15000+600000
  682725 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,1975b,1733s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,76p,1972b,1733s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\lennard.welslau\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lennard.welslau/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on CV_Lennard_Welslau.pdf (2 pages, 126731 bytes).
+Output written on CV_Lennard_Welslau.pdf (2 pages, 126863 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)

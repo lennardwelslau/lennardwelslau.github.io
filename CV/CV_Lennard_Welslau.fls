@@ -1,6 +1,6 @@
-PWD c:\Users\lennard.welslau\Scripts\Lennard Github\lennardwelslau.github.io\CV
+PWD c:\Users\lennard.welslau\Code\Lennard Github\lennardwelslau.github.io\CV
 INPUT C:\Users\lennard.welslau\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\lennard.welslau\Scripts\Lennard Github\lennardwelslau.github.io\CV\CV_Lennard_Welslau.tex
+INPUT c:\Users\lennard.welslau\Code\Lennard Github\lennardwelslau.github.io\CV\CV_Lennard_Welslau.tex
 OUTPUT CV_Lennard_Welslau.log
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\lennard.welslau\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
