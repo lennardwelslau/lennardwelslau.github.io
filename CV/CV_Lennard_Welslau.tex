@@ -62,6 +62,8 @@ andothers = {et al.,}}
 
 \pdfgentounicode=1
 
+\newcommand{\myitem}[1]{\hangindent=1em\hangafter=1\textbf{--}~#1\par}
+
 \newcommand{\Subheading}[5]{   
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1}\textit{\small #2} & \small #3 
@@ -85,14 +87,16 @@ andothers = {et al.,}}
     \Subheading
         {University of Copenhagen}{, Copenhagen, Denmark}{09/2019 - 09/2022}
         {M.Sc. Economics (GPA: 10.5, top decile) \\
-        - Thesis: Wage rigidity and shock transmission in open economy HANK models (Supervisor: Jeppe Druedahl; FG: 12, excellent) (\href{https://lennardwelslau.github.io/research/Welslau_MA_Thesis_2022_Wage_Flexibility_Open_Economy_HANK.pdf}{Link to PDF})\\
-        - Courses in advanced economic theory, microeconometrics, programming, SVAR analysis, business cycles, economic growth, public finance, and international political economy} 
+        \myitem{Thesis: Wage rigidity and shock transmission in open economy HANK models (Supervisor: Jeppe Druedahl; FG: 12, excellent) (\href{https://lennardwelslau.github.io/research/Welslau_MA_Thesis_2022_Wage_Flexibility_Open_Economy_HANK.pdf}{Link to PDF})}\\
+        \myitem{Courses in advanced economic theory, microeconometrics, programming, SVAR analysis, business cycles, economic growth, public finance, and international political economy}
+        } 
 
     \Subheading
         {University College Freiburg}{, Freiburg, Germany}{10/2014 - 08/2018}
         {B.A. Liberal Arts and Sciences (GPA: 1.5, excellent) \\
-        - Thesis: Philosophy of science and the evolution of finance theory (Supervisor: Lars Feld; FG: 1.0, excellent) \\
-        - Courses in mathematics, statistics, economic theory, philosophy of science, political theory, sociology, international relations, and international law}
+        \myitem{Thesis: Philosophy of science and the evolution of finance theory (Supervisor: Lars Feld; FG: 1.0, excellent)}\\
+        \myitem{Courses in mathematics, statistics, economic theory, philosophy of science, political theory, sociology, international relations, and international law}
+        }
 
     \Subheading
         {Universidad de Buenos Aires}{, Buenos Aires, Argentina}{03/2017 - 07/2017}
@@ -154,14 +158,16 @@ andothers = {et al.,}}
 
     \Subheading
     {Languages}{}{}
-    {- German (native); 
-    English, 
-    Spanish (fluent); 
-    Danish, French (basic); 
-    Latin (diploma)\\
-    - Python, Stata, Excel (advanced); 
-    Matlab, R, Julia, Git, \LaTeX\space(intermediate); 
-    SQL, Java, HTML, CSS (basic)}
+    {
+        \myitem{German (native); 
+        English, 
+        Spanish (fluent); 
+        Danish, French (basic); 
+        Latin (diploma)}\\
+        \myitem{Python, Stata, Excel (advanced); 
+        Matlab, R, Julia, Git, \LaTeX\space(intermediate); 
+        SQL, Java, HTML, CSS (basic)}
+    }
     
     \Subheading
     {Certificates}{}{}
