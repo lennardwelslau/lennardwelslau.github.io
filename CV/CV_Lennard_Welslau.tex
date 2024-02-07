@@ -10,7 +10,7 @@
 \usepackage{hyperref}
 \hypersetup{
 colorlinks=true,
-urlcolor=blue
+urlcolor=black
 }
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
@@ -30,11 +30,7 @@ sorting=nyt,
 maxcitenames=2,
 citestyle=authoryear
 ]{biblatex}
-% \addbibresource{bibliography.bib}
 \renewcommand*{\bibfont}{\small}
-%\DefineBibliographyStrings{ngerman}{%
-%\usepackage[style = chicago-authordate,backend=biber, maxcitenames=2, maxbibnames = 99]{biblatex}
-%\renewcommand*{\nameyeardelim}{\addcomma\space}
 \DefineBibliographyStrings{UKenglish}{%
 andothers = {et al.,}}
 
@@ -62,52 +58,53 @@ andothers = {et al.,}}
 
 \pdfgentounicode=1
 
-\newcommand{\myitem}[1]{\hangindent=1em\hangafter=1\textbf{--}~#1\par}
-
-\newcommand{\Subheading}[5]{   
+\newcommand{\Subheading}[4]{   
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1}\textit{\small #2} & \small #3 
-      \end{tabular*} \\
-      \small #4 \\
-    \vspace{7pt}
-    }
-    
+      \end{tabular*}
+      \small #4 
+    \vspace{7pt}}
+
+\newcommand{\myitem}[1]{\hangindent=1em\hangafter=1\textbf{--}~#1\par}
+
+
 \begin{document}
 
 
 \begin{center}
     {\Large Lennard Alexander Welslau} \\ 
     \href{mailto:lennard.welslau@gmail.com}{lennard.welslau@gmail.com} $|$ \href{https://lennardwelslau.github.io/}{lennardwelslau.github.io}
-
 \end{center}
 
 
 %--------EDUCATION--------
 \section{Education}
+
     \Subheading
         {University of Copenhagen}{, Copenhagen, Denmark}{09/2019 - 09/2022}
         {M.Sc. Economics (GPA: 10.5, top decile) \\
-        \myitem{Thesis: Wage rigidity and shock transmission in open economy HANK models (Supervisor: Jeppe Druedahl; FG: 12, excellent) (\href{https://lennardwelslau.github.io/research/Welslau_MA_Thesis_2022_Wage_Flexibility_Open_Economy_HANK.pdf}{Link to PDF})}\\
+        \myitem{Thesis: Wage rigidity and shock transmission in open economy HANK models (Supervisor: Jeppe Druedahl; FG: 12, excellent) (\href{https://lennardwelslau.github.io/research/Welslau_MA_Thesis_2022_Wage_Flexibility_Open_Economy_HANK.pdf}{Link to PDF})}
         \myitem{Courses in advanced economic theory, microeconometrics, programming, SVAR analysis, business cycles, economic growth, public finance, and international political economy}
         } 
 
     \Subheading
         {University College Freiburg}{, Freiburg, Germany}{10/2014 - 08/2018}
         {B.A. Liberal Arts and Sciences (GPA: 1.5, excellent) \\
-        \myitem{Thesis: Philosophy of science and the evolution of finance theory (Supervisor: Lars Feld; FG: 1.0, excellent)}\\
+        \myitem{Thesis: Philosophy of science and the evolution of finance theory (Supervisor: Lars Feld; FG: 1.0, excellent)}
         \myitem{Courses in mathematics, statistics, economic theory, philosophy of science, political theory, sociology, international relations, and international law}
         }
 
     \Subheading
         {Universidad de Buenos Aires}{, Buenos Aires, Argentina}{03/2017 - 07/2017}
         {Courses in human rights, development economics, and international economics}
-
+    
     \Subheading
         {Harvard Summer School}{, Freiburg, Germany}{06/2016 - 08/2016}
         {Course on sustainability, science and technology}
 
 %--------Work EXPERIENCE--------
 \section{Work Experience}
+
     \Subheading
         {Bruegel}{, Brussels, Belgium}{Since 10/2022}
         {Research Analyst -- Economic and statistical modelling, 
@@ -117,38 +114,42 @@ andothers = {et al.,}}
 
     \Subheading
         {Konrad Adenauer Stiftung}{, Panama City, Panama}{11/2021 - 01/2022}
-        {Economic Research Consultant -- Co-authored book chapter on US-China trade tensions (Stata, Python)}
-            
-    \Subheading
-        {United Nations ECLAC}{, Washington DC, USA}{06/2021 - 10/2021}
-        {Economic Affairs Consultant -- Co-authored paper on export competition using structural gravity models 
-        (Stata, Python)}
+        {Economic Research Consultant -- Co-authored book chapter on US-China trade tensions (Stata, Python)}  
+
+    % \Subheading
+    %     {United Nations ECLAC}{, Washington DC, USA}{06/2021 - 10/2021}
+    %     {Economic Affairs Consultant -- Led working paper on export competition using structural gravity models 
+    %     (Stata)}
 
     \Subheading
-        {United Nations ECLAC}{, Washington DC, USA}{09/2020 - 03/2021}
-        {Carlo Schmid Fellow -- Analysed trade data, prepared literature reviews, news and policy briefs (Stata)}
+        {United Nations ECLAC}{, Washington DC, USA}{09/2020 - 10/2021}
+        {Carlo Schmid Fellow and Economic Affairs Consultant -- Led working paper on export competition 
+        using structural gravity models, econometric analysis of trade data, prepared literature reviews, news and policy briefs (Stata, Python)}
 
     \Subheading
         {Copenhagen Business School}{, Washington DC, USA}{01/2020 - 09/2021}
-        {Research Assistant -- Supported Horizon 2020 circular economy project, prepared reports for policymakers}
+        {Research Assistant -- Horizon 2020 circular economy project, prepared literature reviews and 
+        resources for SMEs and policymakers}
 
     \Subheading
         {European Central Bank}{, Frankfurt am Main, Germany}{09/2018 - 03/2019}
-        {Trainee, Market Infrastructure and Payments -- Supported test and release management for TARGET and TIPS, prepared descriptive statistics, drafted strategy and legal documents, presented to senior management}
+        {Trainee, Market Infrastructure and Payments -- Supported test and release management for TARGET 
+        and TIPS, prepared descriptive statistics, strategy and legal documents, presented to senior management (Excel)}
 
     \Subheading
         {Walter Eucken Institute}{, Freiburg, Germany}{03/2018 - 09/2018}
-        {Research Assistant -- Literature review and data analysis (R)}
+        {Research Assistant -- Project on political economics, prepared literature reviews and data analysis (Excel, R)}
 
     \Subheading
         {Benteler Automotive}{, Puebla, Mexico}{01/2014 - 05/2014}
-        {Intern, Supply Chain Management -- Supported material traceability project, tested hardware and software, trained of local staff}
+        {Intern, Supply Chain Management -- Project on material traceability, tested software, trained local staff (Excel)}
 
 \newpage
+
 %--------PUBLICATIONS--------
 \section{Selected Publications}
 \setlength\bibitemsep{1.4\itemsep}
-\begin{refsection}[citations.bib]
+\begin{refsection}[bibliography.bib]
 \nocite{*}
 \printbibliography[heading=none]
 \end{refsection}
@@ -157,38 +158,33 @@ andothers = {et al.,}}
 \section{Skills and Additional Experience}
 
     \Subheading
-    {Languages}{}{}
-    {
-        \myitem{German (native); 
-        English, 
-        Spanish (fluent); 
-        Danish, French (basic); 
-        Latin (diploma)}\\
-        \myitem{Python, Stata, Excel (advanced); 
-        Matlab, R, Julia, Git, \LaTeX\space(intermediate); 
-        SQL, Java, HTML, CSS (basic)}
-    }
+        {Languages}{}{}
+        {\\
+        \myitem{German (native); English, Spanish (fluent); Danish, French (basic); Latin (diploma)}
+        \myitem{Python, Stata, Excel (advanced); Matlab, R, Julia, Git, \LaTeX\space(intermediate); SQL, Java, HTML, CSS (basic)}
+        }
     
     \Subheading
-    {Certificates}{}{}
-    {GRE (Quant 161/170 Verbal 157/170 Analytical 5.0/6),  
-    PM$^2$ (European Commission Project Management Methodology C1 - C4)}
-    
-    \Subheading
-    {Awards}{}{}
-    {Carlo Schmid scholarship (DAAD, German Academic Scholarship Foundation), 
-    DAAD scholarship, 
-    UCPH International scholarship, 
-    e-fellows.net scholarship, 
-    McKinsey Firsthand membership} 
+        {Certificates}{}{}
+        {GRE (Quant 161/170 Verbal 157/170 Analytical 5.0/6),  
+        PM$^2$ (European Commission Project Management Methodology C1 - C4)}
 
     \Subheading
-    {Extracurriculars}{}{}
-    {Kritiske Politter (Economics student initiative), TriRhena Consulting (Student consulting), Geneva Model United Nations, University College Freiburg Student Council, FT 1844 Freiburg e.V. (Volleyball player)}{}
+        {Awards}{}{}
+        {Carlo Schmid scholarship (DAAD, German Academic Scholarship Foundation), 
+        DAAD scholarship, 
+        UCPH International scholarship, 
+        e-fellows.net scholarship, 
+        McKinsey Firsthand membership} 
 
     \Subheading
-    {Interests}{}{}
-    {Sports (surfing, swimming, running), travel (>1 year in Europe, Latin America, West Africa, West Asia), data science, international affairs, political theory}
+        {Extracurriculars}{}{}
+        {Kritiske Politter (Economics student initiative), TriRhena Consulting (Student consulting), 
+        Geneva Model United Nations, University College Freiburg Student Council, FT 1844 Freiburg e.V. (Volleyball player)}{}
+
+    \Subheading
+        {Interests}{}{}
+        {Sports (surfing, swimming, running), travel (>1 year in Europe, Latin America, West Africa, West Asia), data science, international affairs, political theory}
 
 \vfill
 \center{\footnotesize Last updated: \today}
