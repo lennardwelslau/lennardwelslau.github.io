@@ -60,7 +60,7 @@ nav li:hover {
 }
 
 .scrolled {
-  background-color: Gray;
+  background-color: darkgrey;
 }
 
 .scrolled ul li a {
@@ -190,7 +190,7 @@ h3 {
 
 /* Footer */
 footer {
-  background-color: Gray;
+  background-color: darkgrey;
   color: white;
   height: 40px;
   padding: 0;
