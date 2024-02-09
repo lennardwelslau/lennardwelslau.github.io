@@ -161,6 +161,22 @@ h3 {
   text-decoration: underline;
 }
 
+.show-abstract {
+  color: blue; /* Example styling for the "See abstract" link */
+  cursor: pointer;
+}
+
+.show-abstract:hover {
+  text-decoration: underline; /* Example styling for hover effect */
+}
+
+.abstract {
+  margin-top: 10px; /* Example spacing */
+  font-size: 14px; /* Example smaller font size */
+  line-height: 1.2; /* Example decreased line height */
+  font-style: italic; /* Example cursive font style */
+}
+
 /* Code section styles */
 
 .project li {
