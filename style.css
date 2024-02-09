@@ -251,14 +251,14 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .about-description {
     text-align: justify;
   }
 }
 
 /* Adjusted navigation bar styles for mobile */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   nav {
     height: auto;
     padding: 10px 0;
