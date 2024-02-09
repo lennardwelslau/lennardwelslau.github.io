@@ -162,34 +162,33 @@ h3 {
 }
 
 .show-abstract {
-  color: blue; /* Example styling for the "See abstract" link */
+  color: blue; 
   cursor: pointer;
 }
 
 .show-abstract:hover {
-  text-decoration: underline; /* Example styling for hover effect */
+  text-decoration: underline; 
 }
 
 .abstract {
-  margin-top: 10px; /* Example spacing */
-  font-size: 14px; /* Example smaller font size */
-  line-height: 1.2; /* Example decreased line height */
-  font-style: italic; /* Example cursive font style */
+  margin-top: 10px; 
+  font-size: 14px; 
+  line-height: 1.2; 
+  font-style: italic; 
 }
 
 /* Code section styles */
 
 .project li {
-  margin-bottom: 5px; /* Adjust as needed for spacing between entries */
+  margin-bottom: 5px;
   position: relative;
-  padding-left: 25px; /* Adjust the padding to control the space between the symbol and the text */
-}
+  padding-left: 25px; 
 
 .project li::before {
   content: '\2022'; /* Unicode character for a bullet (disc) */
-  color: grey; /* Set the color of the disc */
+  color: grey; 
   position: absolute;
-  left: 5px; /* Adjust the position of the disc */
+  left: 5px; 
 }
 
 .project li a {
