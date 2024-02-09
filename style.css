@@ -183,6 +183,7 @@ h3 {
   margin-bottom: 5px;
   position: relative;
   padding-left: 25px; 
+}
 
 .project li::before {
   content: '\2022'; /* Unicode character for a bullet (disc) */
