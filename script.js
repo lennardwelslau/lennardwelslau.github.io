@@ -31,3 +31,12 @@ $(document).ready(function() {
     }
   });
 });
+
+// Expand and collapse abstract entries
+$(document).ready(function(){
+  $('.show-abstract').click(function(e){
+    e.preventDefault(); // Prevent the default behavior of the link
+    // Toggle visibility of abstract for this publication entry
+    $(this).closest('.publication-entry').find('.abstract').slideToggle();
+  });
+});
