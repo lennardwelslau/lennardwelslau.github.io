@@ -34,15 +34,16 @@ $(document).ready(function() {
 
 // Expand and collapse abstract entries
 $(document).ready(function(){
-  $('.show-abstract').click(function(e){
+  $('.abstract-button').click(function(e){
+    this.classList.toggle("active");
     e.preventDefault(); // Prevent the default behavior of the link
     // Toggle visibility of abstract for this publication entry
     var abstract = $(this).closest('.publication-entry').find('.abstract');
     abstract.slideToggle();
     
-    // Change the text of the link based on the current text
-    var linkText = $(this).text().trim();
-    var newText = (linkText === '[Show abstract]') ? '[Hide abstract]' : '[Show abstract]';
-    $(this).text(newText);
+    // // Change the text of the link based on the current text
+    // var linkText = $(this).text().trim();
+    // var newText = (linkText === 'Show abstract') ? 'Hide abstract' : 'Show abstract';
+    // $(this).text(newText);
   });
 });
