@@ -162,8 +162,9 @@ h3 {
 }
 
 .abstract-button {
-  color: black; 
-  font-style: italic;
+  color: grey; 
+  font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -184,14 +185,13 @@ h3 {
   text-shadow: 0 0 grey;
   font-weight: bold;
   font-style: normal;
-  scale: 1.2;
+  scale: 1.1;
   float: left;
   margin-right: 5px;
 }
 
 .active:after {
   content: '\2012'; /* Unicode character for "minus" sign (-) */
-  margin-right: 5px;
 }
 
 /* Code section styles */

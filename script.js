@@ -41,9 +41,9 @@ $(document).ready(function(){
     var abstract = $(this).closest('.publication-entry').find('.abstract');
     abstract.slideToggle();
     
-    // // Change the text of the link based on the current text
-    // var linkText = $(this).text().trim();
-    // var newText = (linkText === 'Show abstract') ? 'Hide abstract' : 'Show abstract';
-    // $(this).text(newText);
+    // Change the text of the link based on the current text
+    var linkText = $(this).text().trim();
+    var newText = (linkText === 'Show abstract') ? 'Hide abstract' : 'Show abstract';
+    $(this).text(newText);
   });
 });
