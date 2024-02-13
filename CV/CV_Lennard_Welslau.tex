@@ -22,17 +22,42 @@ urlcolor=black
 \usepackage[T1]{fontenc}
 \usepackage{fontawesome}
 
-%for publications
+% for publications
+% \usepackage[
+% backend=bibtex8, natbib,
+% style=authoryear,
+% sorting=nyt,
+% maxcitenames=2,
+% citestyle=authoryear
+% ]{biblatex}
+% \renewcommand*{\bibfont}{\small}
+% \DefineBibliographyStrings{UKenglish}{%
+% andothers = {et al.,}}
 \usepackage[
-backend=bibtex8, natbib,
-style=authoryear,
-sorting=nyt,
-maxcitenames=2,
-citestyle=authoryear
+    backend=biber,
+    style=authoryear,
+    maxcitenames=2,
+    sorting=nyt,
+    natbib=true
 ]{biblatex}
+
 \renewcommand*{\bibfont}{\small}
-\DefineBibliographyStrings{UKenglish}{%
-andothers = {et al.,}}
+
+% Define a new bibliography driver for custom entries
+\DeclareBibliographyDriver{custom}{%
+\usebibmacro{begentry}%
+\printfield{title}%
+\setunit{\adddot\space}\newblock
+\printtext{With}\addspace%
+\printnames{author}%
+\setunit{\addperiod\space}\newblock
+\printfield{note}%
+\usebibmacro{finentry}}
+
+% Map your .bib entries to this new driver
+\DeclareBibliographyAlias{misc}{custom}
+
+
 
 \pagestyle{fancy}
 \fancyhf{} 
