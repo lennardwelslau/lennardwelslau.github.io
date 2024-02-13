@@ -18,46 +18,28 @@ urlcolor=black
 \usepackage{multicol}
 \input{glyphtounicode}
 
-\usepackage{baskervillef}
-\usepackage[T1]{fontenc}
-\usepackage{fontawesome}
-
-% for publications
-% \usepackage[
-% backend=bibtex8, natbib,
-% style=authoryear,
-% sorting=nyt,
-% maxcitenames=2,
-% citestyle=authoryear
-% ]{biblatex}
-% \renewcommand*{\bibfont}{\small}
-% \DefineBibliographyStrings{UKenglish}{%
-% andothers = {et al.,}}
+% Bibliography and custom driver for entries
 \usepackage[
     backend=biber,
     style=authoryear,
-    maxcitenames=2,
+    maxcitenames=3,
     sorting=nyt,
     natbib=true
 ]{biblatex}
-
 \renewcommand*{\bibfont}{\small}
-
-% Define a new bibliography driver for custom entries
+\DefineBibliographyStrings{UKenglish}{andothers = {et al.,}}
 \DeclareBibliographyDriver{custom}{%
-\usebibmacro{begentry}%
-\printfield{title}%
-\setunit{\adddot\space}\newblock
-\printtext{With}\addspace%
-\printnames{author}%
-\setunit{\addperiod\space}\newblock
-\printfield{note}%
-\usebibmacro{finentry}}
-
-% Map your .bib entries to this new driver
+  \printfield{title}%
+  \setunit{\addcomma\space}\newblock
+  \printtext{with}\addspace
+  \printnames{author}\addspace
+  (\printdate)%
+  \setunit{\addcomma\space}\newblock
+  \printfield{note}%
+}
+\DeclareNameAlias{sortname}{first-last}
+\DeclareNameAlias{default}{first-last}
 \DeclareBibliographyAlias{misc}{custom}
-
-
 
 \pagestyle{fancy}
 \fancyhf{} 
@@ -65,7 +47,6 @@ urlcolor=black
 \setlength{\footskip}{10pt}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
 \addtolength{\oddsidemargin}{0.0in}
 \addtolength{\evensidemargin}{0.0in}
 \addtolength{\textwidth}{0.0in}
@@ -75,7 +56,7 @@ urlcolor=black
 
 \urlstyle{same}
 
-%\raggedbottom
+\raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
