@@ -1,0 +1,21 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'CV_Lennard_Welslau.blg'
+[241] biber-MSWIN64:340> INFO - === 
+[375] Biber.pm:419> INFO - Reading 'CV_Lennard_Welslau.bcf'
+[553] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[553] Biber.pm:976> INFO - Using all citekeys in bib section 1
+[553] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[591] Biber.pm:4419> INFO - Processing section 1
+[660] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 1
+[794] bibtex.pm:1713> INFO - LaTeX decoding ...
+[824] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[1000] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1000] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1000] Biber.pm:4239> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[1000] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1012] bbl.pm:660> INFO - Writing 'CV_Lennard_Welslau.bbl' with encoding 'UTF-8'
+[1021] bbl.pm:763> INFO - Output to CV_Lennard_Welslau.bbl
+[1027] Biber.pm:131> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[1027] Biber.pm:131> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[1027] Biber.pm:131> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[1027] Biber.pm:133> INFO - WARNINGS: 3
