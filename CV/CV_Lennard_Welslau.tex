@@ -1,8 +1,7 @@
-\documentclass[A4,11pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 % Packages for symbols and formatting
 \usepackage{latexsym}
-\usepackage[empty]{fullpage} % Use full page style with no headers/footers
 \usepackage{titlesec} % For customizing section titles
 \usepackage{marvosym} % For special symbols
 \usepackage[usenames,dvipsnames]{color} % For colored text
@@ -11,13 +10,21 @@
 \usepackage{hyperref} % For hyperlinks
 \hypersetup{
     colorlinks=true,
-    urlcolor=black
+    urlcolor=blue,
 }
 \usepackage{fancyhdr} % For headers and footers
-\usepackage[english]{babel} % For language specific settings
+\usepackage[english]{babel} % For language-specific settings
+\usepackage{csquotes} % For language-specific quotation marks
 \usepackage{tabularx} % For tables with flexible column widths
-\usepackage{multicol} % For multi-column layouts
-\input{glyphtounicode} % For better PDF accessibility
+\usepackage{geometry} % For precise control over margins
+\geometry{
+    a4paper, % Paper size
+    left=2cm,
+    right=2cm,
+    top=2cm,
+    bottom=2cm
+}
+% \usepackage{glyphtounicode} % For better PDF accessibility (commented out if not available)
 
 % Bibliography and custom driver for entries
 \usepackage[
@@ -28,7 +35,11 @@
     natbib=true
 ]{biblatex}
 \renewcommand*{\bibfont}{\small}
-\DefineBibliographyStrings{UKenglish}{andothers = {et al.,}}
+\DefineBibliographyStrings{UKenglish}{andothers = {et al.}}
+
+% Redefine the title field format to be bold
+\DeclareFieldFormat{title}{\textbf{#1}}
+
 \DeclareBibliographyDriver{custom}{%
   \printfield{title}%
   \setunit{\addcomma\space}\newblock
@@ -45,17 +56,9 @@
 % Set page style
 \pagestyle{fancy}
 \fancyhf{} % Clear all header and footer fields
-\fancyfoot{} % Clear footer
 \setlength{\footskip}{10pt} % Set footer distance
 \renewcommand{\headrulewidth}{0pt} % Remove header line
 \renewcommand{\footrulewidth}{0pt} % Remove footer line
-
-% Set margins (adjust as needed)
-\addtolength{\oddsidemargin}{-0.25in}
-\addtolength{\evensidemargin}{-0.25in}
-\addtolength{\textwidth}{0.5in}
-\addtolength{\topmargin}{-0.5in}
-\addtolength{\textheight}{1in}
 
 % URL formatting
 \urlstyle{same}
@@ -69,15 +72,37 @@
 \titleformat{\section}{\large\itshape\vspace{-5pt}}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
 
 % Enable unicode for PDF
-\pdfgentounicode=1
+% \pdfgentounicode=1 % Uncomment if needed
 
 % Custom command for subheadings
 \newcommand{\Subheading}[4]{   
-    \begin{tabular*}{\textwidth}[t]{@{}l @{\extracolsep{\fill}} r@{}}
+    \vspace{7pt}
+    \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
         \textbf{#1}\textit{\small #2} & {\footnotesize #3} \\
     \end{tabular*}
     {\small #4}
+}
+
+% Custom command for institution headings with several entries
+\newcommand{\InstitutionHeading}[1]{%
     \vspace{7pt}
+    \textbf{#1}
+}
+
+% Custom commands for sub-subheadings
+\newcommand{\SubSubheadingA}[3]{   
+    \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+        \textit{\small #1} & {\footnotesize #2} \\
+    \end{tabular*}
+    {\small #3}
+}
+
+\newcommand{\SubSubheadingB}[3]{   
+    \vspace{3pt}
+    \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+        \textit{\small #1} & {\footnotesize #2} \\
+    \end{tabular*}
+    {\small #3}
 }
 
 % Custom command for list items
@@ -94,98 +119,97 @@
 %--------EDUCATION--------
 \section{Education}
 
-    \Subheading
-        {University of Copenhagen}{, PhD Economics}{since 09/2024}
-        {\\
-        \myitem{Focus: Firm dynamics, HANK models, microeconometrics; Advisor: Søren Hove Ravn
-        }
-        }      
+\InstitutionHeading{University of Copenhagen}
 
-    \Subheading
-        {University of Copenhagen}{, MSc Economics}{09/2019-09/2022}
-        {\\
-        \myitem{Thesis: Wage rigidity and shock transmission in open economy HANK models; 
-        supervised by Jeppe Druedahl; highest grade (12)
-        \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/Welslau_2022_Wage_Flexibility_Open_Economy_HANK.pdf}{PDF link}]}\end{footnotesize}
-        \myitem{PhD courses in time series and microeconometrics, business cycle models, economic growth; 
-        MSc courses in economic theory, programming, public finance, and political economy; 
-        GPA 10.8 (top decile)}
-        } 
+    \SubSubheadingA{PhD Economics}{since 09/2024}
+    {\\
+    \myitem{Focus: Firm dynamics, HANK models, microeconometrics; Advisor: Søren Hove Ravn}
+    }
 
-    \Subheading
-        {University College Freiburg}{, BA Liberal Arts and Sciences}{10/2014-08/2018}
-        {\\
-        \myitem{Thesis: Philosophy of science and finance theory; 
-        supervised by Lars Feld; highest grade (1.0)
-        \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/Welslau_BA_Thesis_2018_Lakatos_Finance_Theory.pdf}{PDF link}]}\end{footnotesize}
-        \myitem{Courses in mathematics, statistics, economic theory, 
-        philosophy of science, political theory, sociology, international 
-        relations; GPA 1.5 (excellent)}
-        }
+    \SubSubheadingB{MSc Economics}{09/2019--09/2022}
+    {\\
+    \myitem{Thesis: Wage rigidity and shock transmission in open economy HANK models; 
+    supervised by Jeppe Druedahl; highest grade (12)
+    \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/Welslau_2022_Wage_Flexibility_Open_Economy_HANK.pdf}{PDF}]\end{footnotesize}}
+    \myitem{PhD courses in econometrics, business cycle models, economic growth; 
+    MSc courses in economic theory, programming, public finance, political economy; 
+    GPA 10.8 (top decile)}
+    }
 
-    \Subheading
-        {Universidad de Buenos Aires}{, Exchange}{03/2017-07/2017}
-        {Courses in human rights, development economics, and international economics}
-    
-    \Subheading
-        {Harvard University}{, Summer School}{06/2016-08/2016}
-        {Courses in sustainability, science and technology studies}
+\Subheading
+    {University College Freiburg}{, BA Liberal Arts and Sciences}{10/2014--08/2018}
+    {\\
+    \myitem{Thesis: Philosophy of science and finance theory; 
+    supervised by Lars Feld; highest grade (1.0)
+    \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/Welslau_BA_Thesis_2018_Lakatos_Finance_Theory.pdf}{PDF}]\end{footnotesize}}
+    \myitem{Courses in mathematics, statistics, economic theory, 
+    philosophy of science, political theory, sociology, international 
+    relations; GPA 1.5 (excellent)}
+    }
+
+\Subheading
+    {Universidad de Buenos Aires}{, Exchange}{03/2017--07/2017}
+    {Courses in human rights, development economics, and international economics}
+
+\Subheading
+    {Harvard University}{, Summer School}{06/2016--08/2016}
+    {Courses in sustainability, science and technology studies}
 
 %--------Work EXPERIENCE--------
 \section{Work Experience}
 
-    \Subheading
-        {Danmarks Nationalbank}{, Resident PhD Fellow}{since 09/2024}
-        {Research unit; Firm dynamics and microeconometrics}
+\Subheading
+    {Danmarks Nationalbank}{, Resident PhD Fellow}{since 09/2024}
+    {Research unit; Firm dynamics and microeconometrics}
 
-    \Subheading
-        {Bruegel}{, Research Analyst}{10/2022-09/2024}
-        {Economic and statistical modelling; co-authored publications on macroeconomics, 
-        economic governance, trade, and inequality; 
-        developed Bruegel's DSA model; 
-        automated data collection and web apps;
-        research presented at the ECB, ECOFIN, IMF, European Parliament, and national governments 
-        (Python, R, Excel)}
+\Subheading
+    {Bruegel}{, Research Analyst}{10/2022--09/2024}
+    {Economic and statistical modelling; co-authored publications on macroeconomics, 
+    economic governance, trade, and inequality; 
+    developed Bruegel's DSA model; 
+    automated data collection and web apps;
+    research presented at the ECB, ECOFIN, IMF, European Parliament, and national governments 
+    (Python, R, Excel)}
 
-    \Subheading
-        {Konrad Adenauer Stiftung}{, Research Consultant}{11/2021-01/2022}
-        {Co-authored book chapter on US-China trade tensions 
-        (Stata, Python)}  
+\Subheading
+    {Konrad Adenauer Stiftung}{, Research Consultant}{11/2021--01/2022}
+    {Co-authored book chapter on US-China trade tensions 
+    (Stata, Python)}  
 
-    \Subheading
-        {United Nations ECLAC}{, Economic Affairs Consultant}{06/2021-10/2021}
+    \InstitutionHeading{United Nations ECLAC}
+
+        \SubSubheadingA{Economic Affairs Consultant}{06/2021--10/2021}
         {Led working paper on export competition using structural gravity models (Stata, Python)}
-
-    \Subheading
-        {United Nations ECLAC}{, Carlo Schmid Fellow}{09/2020-04/2021}
+    
+        \SubSubheadingB{Carlo Schmid Fellow}{09/2020--04/2021}
         {Merit-based scholarship program; prepared econometric analyses of trade data, 
         literature reviews, and policy briefs (Stata, Python)}
 
-    \Subheading
-        {Copenhagen Business School}{, Research Assistant}{01/2020-09/2021}
-        {Horizon 2020 circular economy project; prepared literature reviews and 
-        resources for SMEs and policymakers}
+\Subheading
+    {Copenhagen Business School}{, Research Assistant}{01/2020--09/2021}
+    {Horizon 2020 circular economy project; prepared literature reviews and 
+    resources for SMEs and policymakers}
 
-    \Subheading
-        {European Central Bank}{, Trainee}{09/2018-03/2019}
-        {Market Infrastructure and Payments; test and release management for TARGET 
-        and TIPS; prepared statistics, strategy, and legal documents;
-        presented to senior management (Excel)}
+\Subheading
+    {European Central Bank}{, Trainee}{09/2018--03/2019}
+    {Market Infrastructure and Payments; test and release management for TARGET 
+    and TIPS; prepared statistics, strategy, and legal documents;
+    presented to senior management (Excel)}
 
-    \Subheading
-        {University of Freiburg}{, Research Assistant}{03/2018-09/2018}
-        {Chair of economic policy; literature reviews and data analysis (Excel, R)}
+\Subheading
+    {University of Freiburg}{, Research Assistant}{03/2018--09/2018}
+    {Chair of economic policy; literature reviews and data analysis (Excel, R)}
 
-    \Subheading
-        {Benteler Automotive}{, Intern}{01/2014-05/2014}
-        {Supply Chain Management; project on material traceability in Mexico, 
-        tested software, trained local staff}
+\Subheading
+    {Benteler Automotive}{, Intern}{01/2014--05/2014}
+    {Supply Chain Management; project on material traceability in Mexico, 
+    tested software, trained local staff}
 
 \newpage
 
 %--------PUBLICATIONS--------
 \section{Working Papers and Publications (pre-PhD)}
-\setlength\bibitemsep{1.4\itemsep}
+\setlength{\bibitemsep}{1.4ex}
 \begin{refsection}[bibliography.bib]
 \nocite{*}
 \printbibliography[heading=none]
@@ -194,24 +218,24 @@
 %--------OTHER--------
 \section{Miscellaneous}
 
-    \Subheading
-        {Languages}{}{}
-        {\\
-        \myitem{German (native); English, Spanish (fluent); Danish, French (basic); Latin (diploma)}
-        \myitem{Python, Stata, Excel (advanced); Matlab, R, Julia, Git, SQL, Java, HTML, CSS, \LaTeX\space(intermediate)}
-        }
+\Subheading
+    {Languages}{}{}
+    {\\
+    \myitem{German (native); English, Spanish (fluent); Danish, French (basic); Latin (diploma)}
+    \myitem{Python, Stata, Excel (advanced); Matlab, R, Julia, Git, SQL, Java, HTML, CSS, \LaTeX\space(intermediate)}
+    }
 
-    \Subheading
-        {Awards}{}{}
-        {Carlo Schmid scholarship (DAAD, German Academic Scholarship Foundation), 
-        DAAD scholarship, 
-        UCPH International scholarship
-        } 
+\Subheading
+    {Awards and Grants}{}{}
+    {\\
+    \myitem{Carlo Schmid scholarship (DAAD, German Academic Scholarship Foundation)}
+    \myitem{DAAD scholarship}
+    \myitem{UCPH International scholarship}
+    } 
 
 \vfill
-\center{\footnotesize Last updated: \today}
+\begin{center}
+{\footnotesize Last updated: \today}
+\end{center}
 
 \end{document}
-
-
-
