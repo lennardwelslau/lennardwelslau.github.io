@@ -76,18 +76,18 @@
 
 % Custom command for subheadings
 \newcommand{\Subheading}[4]{   
-    \vspace{7pt}
     \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
         \textbf{#1}\textit{\small #2} & {\footnotesize #3} \\
     \end{tabular*}
     {\small #4}
+    \vspace{7pt}
 }
 
 % Custom command for institution headings with several entries
 \newcommand{\InstitutionHeading}[1]{%
-    \vspace{7pt}
-    \textbf{#1}
-}
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1}\\
+\end{tabular*}}
 
 % Custom commands for sub-subheadings
 \newcommand{\SubSubheadingA}[3]{   
@@ -103,6 +103,7 @@
         \textit{\small #1} & {\footnotesize #2} \\
     \end{tabular*}
     {\small #3}
+    \vspace{7pt}
 }
 
 % Custom command for list items
@@ -205,6 +206,7 @@
 
 %--------PUBLICATIONS--------
 \section{Working Papers and Publications (pre-PhD)}
+\vspace{3pt}
 \setlength{\bibitemsep}{1.4ex}
 \begin{refsection}[bibliography.bib]
 \nocite{*}
