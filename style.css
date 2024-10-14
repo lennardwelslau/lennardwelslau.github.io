@@ -1,5 +1,6 @@
 /* Reset default styles */
 html, body, ul, li {
+  height: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9,6 +10,14 @@ html, body, ul, li {
 body {
   font-family: Roboto, sans-serif;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+iframe {
+  flex-grow: 1;
+  margin-top: 50px; /* Offset equal to navbar height */
+  border: none;
 }
 
 .container {
@@ -25,7 +34,30 @@ h2 {
   margin-bottom: 10px;
 }
 
+.link {
+  text-decoration: none;
+  color: blue; /* Adjust to match your desired link color */
+}
+
+.link:visited {
+  color: blue; /* Ensure visited links maintain the same color */
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 /* Navigation bar styles */
+.nav-links-container {
+  display: flex; /* Ensure nav links are visible in desktop view */
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none; /* Hide the hamburger icon in desktop view */
+}
+
 nav {
   background-color: white;
   position: fixed;
@@ -44,7 +76,6 @@ nav ul {
   text-overflow: ellipsis; /* Display ellipsis (...) for text that overflows */
   height: 100%;
 }
-
 
 nav ul li a {
   color: grey;
@@ -68,6 +99,21 @@ nav li:hover {
   transition: color 0.25 ease; /* Add a smooth transition effect for background color, text color, and padding */
 }
 
+/* Main styles */
+main ul li {
+  margin-bottom: 5px;          /* Spacing between list items */
+  position: relative;          /* Positioning context for pseudo-element */
+  padding-left: 25px;          /* Space between bullet and text */
+}
+
+main ul li::before {
+  content: '\2022';            /* Unicode character for a bullet (disc) */
+  color: grey;                 /* Bullet color */
+  position: absolute;          /* Position bullet relative to list item */
+  left: 0;                     /* Align bullet to the left */
+  font-size: 1em;              /* Bullet size */
+}
+
 /* About section styles */
 #about {
   margin-top: 60px; /* Adjust the space between navigation bar and title */
@@ -88,18 +134,13 @@ nav li:hover {
   margin-right: 30px;
 }
 
-.about-links {
-  display: block; 
-  text-align: left;
+.about-links li::before {
+  content: none; /* Remove the bullet */
 }
 
-.about-links a {
-  display: block;
-  text-decoration: none;
-}
-
-.about-links a:visited {
-  color: blue;
+.about-links li {
+  padding-left: 0; /* Remove padding left */
+  margin-bottom: 10px; /* Optional: spacing between items */
 }
 
 .about-links a:hover {
@@ -125,6 +166,7 @@ nav li:hover {
 h2 {
   text-align: center;
   border-bottom: 2px solid #ccc; /* Add a border under section headings */
+  padding-top: 5px;
   padding-bottom: 5px; /* Add some padding for better spacing */
   margin-bottom: 15px; /* Adjust as needed for spacing between headings and content */
 }
@@ -135,30 +177,91 @@ h3 {
   margin-bottom: 5px; /* Adjust as needed for spacing between headings and content */
 }
 
-/* Research section styles */
-.bibliography li {
-  margin-bottom: 5px; /* Adjust as needed for spacing between entries */
-  position: relative;
-  padding-left: 25px; /* Adjust the padding to control the space between the symbol and the text */
+/* CV Container */
+.cv-container {
+  margin-top: 80px; /* Adjust to account for fixed navigation bar */
+  padding-bottom: 40px; /* Space before footer */
 }
 
-.bibliography li::before {
-  content: '\2022'; /* Unicode character for a bullet (disc) */
-  color: grey; /* Set the color of the disc */
+/* CV Sections */
+.cv-section {
+  margin-bottom: 30px;
+}
+
+.download-cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  background-color: #ccc; /* Green background */
+  color: white; /* White text */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv-button:hover {
+  background-color: grey; /* Darker green on hover */
+}
+
+.download-cv-button i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Institution/Company Heading */
+.cv-institution {
+  margin-bottom: 15px;
+}
+
+/* Subheading for Degrees/Positions */
+.cv-subheading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+/* Title and Date within Subheading */
+.cv-title {
+  font-weight: bold;
+}
+
+.cv-date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* List of Items (e.g., responsibilities, achievements) */
+.cv-item-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.cv-item-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.cv-item-list li::before {
+  content: "–"; /* Dash symbol */
   position: absolute;
-  left: 5px; /* Adjust the position of the disc */
+  left: 0;
+  top: 0;
+  color: #2c3e50;
+}
+
+/* Footer Note */
+.footer-note {
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+  margin-top: 40px;
 }
 
 .bibliography li a {
   text-decoration: none;
-}
-
-.bibliography li a:visited {
-  color: blue;
-}
-
-.bibliography li a:hover {
-  text-decoration: underline;
 }
 
 .abstract-button {
@@ -233,10 +336,53 @@ footer {
   justify-content: center;
 }
 
+
 /* Adjusted container styles for mobile */
 @media (max-width: 768px) {
   .container {
     padding: 10px;
+  }
+}
+
+/* Mobile view: Hide the menu by default and show the hamburger icon */
+@media (max-width: 768px) {
+  .nav-links-container {
+    display: none; /* Hide the links by default in mobile view */
+  }
+
+  .menu-icon {
+    display: block; /* Show the hamburger icon */
+    font-size: 24px;
+    cursor: pointer;
+    color: grey;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .nav-links-container.show {
+    display: flex; /* Show the nav links when toggled */
+    flex-direction: column; /* Stack links vertically in mobile view */
+    background-color: white;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+  }
+
+  nav ul li a {
+    padding: 15px;
+    display: block;
+    color: grey;
   }
 }
 
@@ -271,29 +417,5 @@ footer {
 @media (max-width: 600px) {
   .about-description {
     text-align: justify;
-  }
-}
-
-/* Adjusted navigation bar styles for mobile */
-@media (max-width: 600px) {
-  nav {
-    height: auto;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 0 10px;
-  }
-
-  nav ul li a {
-    padding: 5px;
   }
 }
