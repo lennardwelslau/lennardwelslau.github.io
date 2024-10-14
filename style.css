@@ -137,7 +137,7 @@ main ul li::before {
 }
 
 .about-image img {
-  max-width: 500px;
+  max-width: 225px;
   display: block;
   height: auto;
   margin-right: 30px;
@@ -418,7 +418,7 @@ footer {
   }
 
   .about-image img {
-    max-width: 100%;
+    max-width: 225px;
     margin-right: 0;
     margin-bottom: 10px;
   }
