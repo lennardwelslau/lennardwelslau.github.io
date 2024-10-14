@@ -166,8 +166,8 @@ main ul li::before {
 h2 {
   text-align: center;
   border-bottom: 2px solid #ccc; /* Add a border under section headings */
-  padding-top: 5px;
   padding-bottom: 5px; /* Add some padding for better spacing */
+  margin-top: 21px;
   margin-bottom: 15px; /* Adjust as needed for spacing between headings and content */
 }
 
@@ -383,6 +383,13 @@ footer {
     padding: 15px;
     display: block;
     color: grey;
+  }
+}
+
+/* Adjusted h2 for mobile view */
+@media (max-width: 768px) {
+  h2 {
+    margin-top: 31px;
   }
 }
 
