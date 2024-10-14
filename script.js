@@ -11,11 +11,20 @@ $(document).ready(function() {
 
 // Toggle the navigation menu on mobile
 $(document).ready(function() {
-  $('#menu-icon').click(function() {
+  $('#menu-icon').click(function(event) {
     $('.nav-links-container').toggleClass('show');
+    event.stopPropagation(); // Prevent this click from reaching the document click event
+  });
+
+  // Close the menu if clicking outside the nav-links-container or menu-icon
+  $(document).click(function(event) {
+    if (!$(event.target).closest('.nav-links-container, #menu-icon').length) {
+      if ($('.nav-links-container').hasClass('show')) {
+        $('.nav-links-container').removeClass('show');
+      }
+    }
   });
 });
-
 
 // Expand and collapse abstract entries
 $(document).ready(function(){
