@@ -19,9 +19,11 @@ main {
 }
 
 iframe {
-  flex-grow: 1;
+  width: 100%;
   max-width: 780px;
   margin: 0 auto;
+  display: block;
+  flex-grow: 1;
   margin-top: 50px; /* Offset equal to navbar height */
   border: none;
 }
