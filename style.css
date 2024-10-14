@@ -20,6 +20,8 @@ main {
 
 iframe {
   flex-grow: 1;
+  max-width: 780px;
+  margin: 0 auto;
   margin-top: 50px; /* Offset equal to navbar height */
   border: none;
 }
