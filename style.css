@@ -137,7 +137,7 @@ main ul li::before {
 }
 
 .about-image img {
-  max-width: 225px;
+  max-width: 225px !important;
   display: block;
   height: auto;
   margin-right: 30px;
