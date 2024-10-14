@@ -82,11 +82,16 @@ nav ul {
 }
 
 nav ul li a {
+  list-style: none;
+  margin: 0;
   color: grey;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   padding: 10px 30px;
+  align-items: center;     /* Vertically center the text inside the li */
+  display: flex;
+  justify-content: center;
   transition: font-size 0.25s ease, background-color 0.25s ease, color 0.25s ease; /* Add a smooth transition effect */
 }
 
@@ -171,7 +176,7 @@ h2 {
   text-align: center;
   border-bottom: 2px solid #ccc; /* Add a border under section headings */
   padding-bottom: 5px; /* Add some padding for better spacing */
-  margin-top: 21px;
+  margin-top: 25px;
   margin-bottom: 15px; /* Adjust as needed for spacing between headings and content */
 }
 
@@ -393,7 +398,7 @@ footer {
 /* Adjusted h2 for mobile view */
 @media (max-width: 768px) {
   h2 {
-    margin-top: 31px;
+    margin-top: 35px;
   }
 }
 
