@@ -369,6 +369,14 @@ footer {
     right: 20px;
   }
 
+  .scrolled .menu-icon {
+    color: white;
+  }
+
+  .scrolled ul li a {
+    color: grey;
+  }
+
   .nav-links-container.show {
     display: flex; /* Show the nav links when toggled */
     flex-direction: column; /* Stack links vertically in mobile view */
