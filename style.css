@@ -15,12 +15,14 @@ body {
 }
 
 main {
+  margin-top: 10px;
   flex-grow: 1;
 }
 
 iframe {
   width: 100%;
   max-width: 780px;
+  height: 100%;
   margin: 0 auto;
   display: block;
   flex-grow: 1;
@@ -356,6 +358,13 @@ footer {
     padding: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 0px;
+    flex-grow: 1;
+  }
+}  
 
 /* Mobile view: Hide the menu by default and show the hamburger icon */
 @media (max-width: 768px) {
