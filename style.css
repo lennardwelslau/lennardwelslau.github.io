@@ -22,7 +22,6 @@ main {
 iframe {
   width: 100%;
   max-width: 780px;
-  height: 100%;
   margin: 0 auto;
   display: block;
   flex-grow: 1;
