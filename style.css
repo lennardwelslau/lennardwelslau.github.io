@@ -142,7 +142,7 @@ main ul li::before {
 }
 
 .about-image img {
-  width: 225px; 
+  width: 200px; 
   display: block;
   height: auto;
   margin-right: 30px;
