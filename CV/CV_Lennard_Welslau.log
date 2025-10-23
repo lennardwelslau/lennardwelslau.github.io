@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.11)  23 OCT 2025 11:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.11)  23 OCT 2025 11:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -533,6 +533,7 @@ LaTeX Font Info:    ... okay on input line 112.
 \everyMPtoPDFconversion=\toks28
 )
 Package hyperref Info: Link coloring ON on input line 112.
+ (./CV_Lennard_Welslau.out) (./CV_Lennard_Welslau.out)
 \@outlinefile=\write4
 \openout4 = `CV_Lennard_Welslau.out'.
 
@@ -582,9 +583,8 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `CV_Lennard_Welslau.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'CV_Lennard_Welslau.bbl' not found.
-
-No file CV_Lennard_Welslau.bbl.
+Package biblatex Info: ... file 'CV_Lennard_Welslau.bbl' found.
+ (./CV_Lennard_Welslau.bbl)
 Package biblatex Info: Reference section=0 on input line 112.
 Package biblatex Info: Reference segment=0 on input line 112.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -594,7 +594,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 117.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 117.
-(c:/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
+ (c:/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
@@ -605,10 +605,6 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \blx@sectionciteorder@1=\count428
 Package biblatex Info: Reference section=1 on input line 210.
 Package biblatex Info: Setting label 'refsection:1' on input line 210.
-
-
-LaTeX Warning: Empty bibliography on input line 212.
-
 Package biblatex Info: Reference section=0 on input line 213.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 223.
@@ -621,43 +617,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `CV_Lennard_Welslau.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `CV_Lennard_Welslau.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  787C37791A3A18439DDF7BAC00DA1A05;583.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                CV_Lennard_Welslau
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `CV_Lennard_Welslau.out' has not changed.
+(rerunfilecheck)             Checksum: 787C37791A3A18439DDF7BAC00DA1A05;583.
 Package logreq Info: Writing requests to 'CV_Lennard_Welslau.run.xml'.
 \openout1 = `CV_Lennard_Welslau.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18841 strings out of 473578
- 327313 string characters out of 5732242
- 1197182 words of memory out of 5000000
- 41558 multiletter control sequences out of 15000+600000
+ 19126 strings out of 473578
+ 333962 string characters out of 5732242
+ 1197869 words of memory out of 5000000
+ 41825 multiletter control sequences out of 15000+600000
  563994 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,81p,1256b,1748s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,81p,1256b,1745s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on CV_Lennard_Welslau.pdf (2 pages, 115710 bytes).
+Output written on CV_Lennard_Welslau.pdf (2 pages, 123550 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
