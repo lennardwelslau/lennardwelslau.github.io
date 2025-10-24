@@ -300,7 +300,7 @@ h4 {
 
 #cv .date {
   flex: 0 0 120px; /* Fixed width for the date column */
-  color: #555;
+  color: #555; 
 }
 
 #cv .details {
