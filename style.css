@@ -281,6 +281,42 @@ h4 {
   margin-top: 40px;
 }
 
+/* === START: CV Section Styles === */
+
+#cv ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#cv li {
+  display: flex;
+  margin-bottom: 1em;
+  padding-left: 0; /* Reset padding */
+}
+
+#cv li::before {
+  content: none; /* Remove the pseudo-element bullet */
+}
+
+#cv .date {
+  flex: 0 0 120px; /* Fixed width for the date column */
+  color: #555;
+}
+
+#cv .details {
+  flex: 1;
+}
+
+#cv .institution {
+  font-weight: bold;
+}
+
+#cv .role {
+  font-style: italic;
+}
+
+/* === END: CV Section Styles === */
+
 /* === START: Research Section Styles === */
 
 .publication-entry {
@@ -364,6 +400,11 @@ hr.section-divider {
   height: 1px;
   background: #ddd;
   margin: 40px 0;
+}
+
+#code .bibliography {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 /* === END: Research Section Styles === */
