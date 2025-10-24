@@ -186,9 +186,16 @@ h2 {
 }
 
 h3 {
-  border-bottom: 0px solid #ccc; /* Add a border under section headings */
-  margin-top: 30px;
-  margin-bottom: 5px; /* Adjust as needed for spacing between headings and content */
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3em;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
 }
 
 /* CV Container */
@@ -273,6 +280,93 @@ h3 {
   color: #777;
   margin-top: 40px;
 }
+
+/* === START: Research Section Styles === */
+
+.publication-entry {
+  display: flex;
+  flex-direction: column; /* Stacks the main content and the abstract */
+  margin-bottom: 2.5em;
+}
+
+.publication-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.publication-details {
+  flex: 3; /* Left column (details) takes more space */
+}
+
+.publication-title {
+  font-weight: normal;
+  font-size: 1em;
+  margin-bottom: 0.25em;
+}
+
+.publication-meta {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+.publication-links {
+  flex: 1; /* Right column (links) takes less space */
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align buttons to the right */
+  gap: 8px;
+}
+
+/* Common style for buttons in the right column */
+.publication-links .button-link {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f9f9f9;
+  font-size: 13px;
+  font-weight: normal;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+}
+
+.publication-links .button-link:hover {
+  background-color: #eee;
+  border-color: #999;
+  text-decoration: none;
+}
+
+.publication-notes {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 0.25em;
+}
+
+.bibliography li::before {
+    content: none; /* Remove default list bullets */
+}
+
+.bibliography {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+hr.section-divider {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 40px 0;
+}
+
+/* === END: Research Section Styles === */
 
 .bibliography li a {
   text-decoration: none;
@@ -453,4 +547,34 @@ footer {
   .about-description {
     text-align: justify;
   }
+}
+
+@media (max-width: 600px) {
+  .publication-main {
+    flex-direction: column;
+  }
+  .publication-links {
+    text-align: left;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .publication-notes {
+    text-align: left;
+    width: 100%;
+    margin-top: 0.25em;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: darkgrey;
+  color: white;
+  height: 40px;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
