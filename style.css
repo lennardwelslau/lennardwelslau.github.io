@@ -19,28 +19,10 @@ main {
   flex-grow: 1;
 }
 
-iframe {
-  width: 100%;
-  max-width: 750px;
-  margin: 0 auto;
-  display: block;
-  flex-grow: 1;
-  margin-top: 50px; /* Offset equal to navbar height */
-  border: none;
-}
-
 .container {
   max-width: 750px;
   margin: 0 auto;
   padding: 20px;
-}
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  margin-bottom: 10px;
 }
 
 .link {
@@ -188,14 +170,16 @@ h2 {
 h3 {
   font-size: 1.5em;
   margin-bottom: 1em;
+  margin-top: 1em; 
   border-bottom: 2px solid #eee;
-  padding-bottom: 0.3em;
+  padding-bottom: 0;
 }
 
 h4 {
   font-size: 1.2em;
   margin-top: 1.5em;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0;
 }
 
 /* CV Container */
@@ -230,57 +214,6 @@ h4 {
   margin-right: 8px; /* Space between icon and text */
 }
 
-/* Institution/Company Heading */
-.cv-institution {
-  margin-bottom: 15px;
-}
-
-/* Subheading for Degrees/Positions */
-.cv-subheading {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-/* Title and Date within Subheading */
-.cv-title {
-  font-weight: bold;
-}
-
-.cv-date {
-  font-size: 0.9em;
-  color: #777;
-}
-
-/* List of Items (e.g., responsibilities, achievements) */
-.cv-item-list {
-  list-style: none;
-  padding-left: 20px;
-}
-
-.cv-item-list li {
-  position: relative;
-  margin-bottom: 10px;
-  padding-left: 15px;
-}
-
-.cv-item-list li::before {
-  content: "–"; /* Dash symbol */
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #2c3e50;
-}
-
-/* Footer Note */
-.footer-note {
-  text-align: center;
-  font-size: 0.8em;
-  color: #777;
-  margin-top: 40px;
-}
-
 /* === START: CV Section Styles === */
 
 #cv ul {
@@ -290,7 +223,7 @@ h4 {
 
 #cv li {
   display: flex;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   padding-left: 0; /* Reset padding */
 }
 
@@ -322,7 +255,7 @@ h4 {
 .publication-entry {
   display: flex;
   flex-direction: column; /* Stacks the main content and the abstract */
-  margin-bottom: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 .publication-main {
@@ -405,13 +338,10 @@ hr.section-divider {
 #code .bibliography {
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 1em;
 }
 
 /* === END: Research Section Styles === */
-
-.bibliography li a {
-  text-decoration: none;
-}
 
 .abstract-button {
   color: grey; 
@@ -449,7 +379,7 @@ hr.section-divider {
 /* Code section styles */
 
 .project li {
-  margin-bottom: 5px;
+  margin-bottom: 0.5em;
   position: relative;
   padding-left: 25px; 
 }
