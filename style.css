@@ -356,24 +356,20 @@ hr.section-divider {
 
 .abstract {
   margin-top: 5px; 
-  font-size: 14px; 
-  line-height: 1.2; 
 }
 
-.abstract-button:after {
-  content: '\002B'; /* Unicode character for "plus" sign (+) */
-  display: inline-block;
-  color: rgba(0,0,0,0);
-  text-shadow: 0 0 grey;
+/* Default state: add a '+' before the button text */
+.abstract-button::before {
+  content: "+ ";
   font-weight: bold;
-  font-style: normal;
-  scale: 1.1;
-  float: left;
-  margin-right: 5px;
+  color: grey
 }
 
-.active:after {
-  content: '\2012'; /* Unicode character for "minus" sign (-) */
+/* Active state: change the content to a '−' */
+.abstract-button.active::before {
+  content: "− "; /* Unicode character for "minus" sign (-) */
+  font-weight: bold;
+  color: grey;
 }
 
 /* Code section styles */
@@ -396,7 +392,7 @@ hr.section-divider {
 }
 
 .project li a:visited {
-  color: blue;
+  color: grey;
 }
 
 .project li a:hover {
@@ -446,8 +442,12 @@ footer {
     right: 20px;
   }
 
-  .scrolled .menu-icon {
+  .scrolled .menu-icon:not(.active) {
     color: white;
+  }
+
+  .menu-icon.active {
+    color: grey !important; /* Use !important to override other rules */
   }
 
   .scrolled ul li a {

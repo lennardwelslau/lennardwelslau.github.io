@@ -11,9 +11,26 @@ $(document).ready(function() {
 
 // Toggle the navigation menu on mobile
 $(document).ready(function() {
-  $('#menu-icon').click(function(event) {
+  // Toggle mobile navigation menu
+  $('#menu-icon').click(function() {
     $('.nav-links-container').toggleClass('show');
-    event.stopPropagation(); // Prevent this click from reaching the document click event
+    $(this).toggleClass('active'); // Add this line
+  });
+
+  // Abstract toggle functionality
+  $(document).ready(function(){
+    $('.abstract-button').click(function(e){
+      this.classList.toggle("active");
+      e.preventDefault(); // Prevent the default behavior of the link
+      // Toggle visibility of abstract for this publication entry
+      var abstract = $(this).closest('.publication-entry').find('.abstract');
+      abstract.slideToggle();
+      
+      // Change the text of the link based on the current text
+      var linkText = $(this).text().trim();
+      var newText = (linkText === 'Show abstract') ? 'Hide abstract' : 'Show abstract';
+      $(this).text(newText);
+    });
   });
 
   // Close the menu if clicking outside the nav-links-container or menu-icon
@@ -23,21 +40,5 @@ $(document).ready(function() {
         $('.nav-links-container').removeClass('show');
       }
     }
-  });
-});
-
-// Expand and collapse abstract entries
-$(document).ready(function(){
-  $('.abstract-button').click(function(e){
-    this.classList.toggle("active");
-    e.preventDefault(); // Prevent the default behavior of the link
-    // Toggle visibility of abstract for this publication entry
-    var abstract = $(this).closest('.publication-entry').find('.abstract');
-    abstract.slideToggle();
-    
-    // Change the text of the link based on the current text
-    var linkText = $(this).text().trim();
-    var newText = (linkText === 'Show abstract') ? 'Hide abstract' : 'Show abstract';
-    $(this).text(newText);
   });
 });
