@@ -361,13 +361,13 @@ hr.section-divider {
   box-sizing: border-box;
   background-color: #f9f9f9; /* Very light grey */
   /* Negative margins to break out of the container */
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  margin-left: calc(-100vw + 100%);
+  margin-right: calc(-100vw + 100%);
   /* Padding to push the content back into the container's bounds */
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+  padding-left: calc(100vw - 100%);
+  padding-right: calc(100vw - 100%);
 }
 
 /* Default state: add a '+' before the button text */
