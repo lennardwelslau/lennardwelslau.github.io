@@ -355,8 +355,19 @@ hr.section-divider {
 }
 
 .abstract {
+  display: none; /* Hidden by default */
   margin-top: 5px; 
   font-size: 0.9em; 
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Very light grey */
+  /* Negative margins to break out of the container */
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  /* Padding to push the content back into the container's bounds */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
 }
 
 /* Default state: add a '+' before the button text */
