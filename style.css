@@ -27,11 +27,11 @@ main {
 
 .link {
   text-decoration: none;
-  color: blue; /* Adjust to match your desired link color */
+  color: grey; /* Adjust to match your desired link color */
 }
 
 .link:visited {
-  color: blue; /* Ensure visited links maintain the same color */
+  color: grey; /* Ensure visited links maintain the same color */
 }
 
 .link:hover {
