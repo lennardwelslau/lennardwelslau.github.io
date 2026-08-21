@@ -1,17 +1,17 @@
-[0] Config.pm:308> INFO - This is Biber 2.20
-[0] Config.pm:311> INFO - Logfile is 'CV_Lennard_Welslau.blg'
-[566] biber-MSWIN64:340> INFO - === 
-[693] Biber.pm:420> INFO - Reading 'CV_Lennard_Welslau.bcf'
-[1049] Biber.pm:994> INFO - Found 0 citekeys in bib section 0
-[1050] Biber.pm:991> INFO - Using all citekeys in bib section 1
-[1050] Biber.pm:994> INFO - Found 0 citekeys in bib section 0
-[1109] Biber.pm:4463> INFO - Processing section 1
-[1150] Biber.pm:4654> INFO - Looking for bibtex file 'bibliography.bib' for section 1
-[1300] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1416] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[1787] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1788] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1788] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-GB'
-[1788] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-GB'
-[1832] bbl.pm:676> INFO - Writing 'CV_Lennard_Welslau.bbl' with encoding 'UTF-8'
-[1880] bbl.pm:779> INFO - Output to CV_Lennard_Welslau.bbl
+[1] Config.pm:308> INFO - This is Biber 2.20
+[1] Config.pm:311> INFO - Logfile is 'CV_Lennard_Welslau.blg'
+[1460] biber-MSWIN64:340> INFO - === 
+[2219] Biber.pm:420> INFO - Reading 'CV_Lennard_Welslau.bcf'
+[2868] Biber.pm:994> INFO - Found 0 citekeys in bib section 0
+[2869] Biber.pm:991> INFO - Using all citekeys in bib section 1
+[2869] Biber.pm:994> INFO - Found 0 citekeys in bib section 0
+[3000] Biber.pm:4463> INFO - Processing section 1
+[3255] Biber.pm:4654> INFO - Looking for bibtex file 'bibliography.bib' for section 1
+[3597] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3729] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[4456] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4456] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4457] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-GB'
+[4457] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-GB'
+[4508] bbl.pm:676> INFO - Writing 'CV_Lennard_Welslau.bbl' with encoding 'UTF-8'
+[4566] bbl.pm:779> INFO - Output to CV_Lennard_Welslau.bbl

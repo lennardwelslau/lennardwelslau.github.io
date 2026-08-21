@@ -154,10 +154,8 @@
       \strng{authornamehash}{bbf31fe22b54772d3ebefa5238bc8478}
       \strng{authorfullhash}{bbf31fe22b54772d3ebefa5238bc8478}
       \strng{authorfullhashraw}{bbf31fe22b54772d3ebefa5238bc8478}
-      \field{extraname}{1}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -219,127 +217,6 @@
       \field{year}{2024}
       \true{nocite}
     \endentry
-    \entry{yearbook_chapter}{misc}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=98aabf42a387b190e7bafaa304915f4b}{%
-           family={Zettelmeyer},
-           familyi={Z\bibinitperiod},
-           given={Jeromin},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=919bc85f8cfaa2d630239a7248417cc7}{%
-           family={Claeys},
-           familyi={C\bibinitperiod},
-           given={Grégory},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
-           family={Darvas},
-           familyi={D\bibinitperiod},
-           given={Zsolt},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4e07b3040937734a765527ee6e80e385}{%
-           family={Zenios},
-           familyi={Z\bibinitperiod},
-           given={Stavros},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{ccd0ba068f0f245caaa325aab7e00a55}
-      \strng{fullhash}{1cdef46c8c5c4a730805e67d5273901e}
-      \strng{fullhashraw}{1cdef46c8c5c4a730805e67d5273901e}
-      \strng{bibnamehash}{ccd0ba068f0f245caaa325aab7e00a55}
-      \strng{authorbibnamehash}{ccd0ba068f0f245caaa325aab7e00a55}
-      \strng{authornamehash}{ccd0ba068f0f245caaa325aab7e00a55}
-      \strng{authorfullhash}{1cdef46c8c5c4a730805e67d5273901e}
-      \strng{authorfullhashraw}{1cdef46c8c5c4a730805e67d5273901e}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{In "A Yearbook on the Euro 2024" \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/darvas-welslau-zettelmeyer-2024-longer-term-fiscal-challenges.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{The longer-term fiscal challenges facing the European Union}
-      \field{year}{2024}
-      \true{nocite}
-    \endentry
-    \entry{kas_chapter}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=1142fccf4463a986bbb7f472f95d7c69}{%
-           family={Artecona},
-           familyi={A\bibinitperiod},
-           given={Raquel},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ab1d7c3aa2fca9a93efcc40a530f5c63}{%
-           family={Perrotti},
-           familyi={P\bibinitperiod},
-           given={Daniel\bibnamedelima E.},
-           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{bbf31fe22b54772d3ebefa5238bc8478}
-      \strng{fullhash}{bbf31fe22b54772d3ebefa5238bc8478}
-      \strng{fullhashraw}{bbf31fe22b54772d3ebefa5238bc8478}
-      \strng{bibnamehash}{bbf31fe22b54772d3ebefa5238bc8478}
-      \strng{authorbibnamehash}{bbf31fe22b54772d3ebefa5238bc8478}
-      \strng{authornamehash}{bbf31fe22b54772d3ebefa5238bc8478}
-      \strng{authorfullhash}{bbf31fe22b54772d3ebefa5238bc8478}
-      \strng{authorfullhashraw}{bbf31fe22b54772d3ebefa5238bc8478}
-      \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{In "Retos y oportunidades de América Latina y el Caribe en el comercio mundial pospandemia", KAS \& ECLAC \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/artecona-welslau-perrotti-2024-tensiones-comerciales.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{Tensiones comerciales entre China y Estados Unidos: Una oportunidad para América Latina y el Caribe en el mercado estadounidense?}
-      \field{year}{2024}
-      \true{nocite}
-    \endentry
-    \entry{empn_prem}{misc}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2153d78766c0d9ca6112ca1ece4c05e5}{%
-           family={Gottschalk},
-           familyi={G\bibinitperiod},
-           given={Saskia},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=71eeb7e97e34b639419e1df1bc0b1f13}{%
-           family={Wangenheim},
-           familyi={W\bibinitperiod},
-           given={Sven},
-           giveni={S\bibinitperiod},
-           givenun=0,
-           prefix={von},
-           prefixi={v\bibinitperiod},
-           prefixun=0}}%
-      }
-      \strng{namehash}{b9c539bae0c65e11a044590b85f73a1c}
-      \strng{fullhash}{b9c539bae0c65e11a044590b85f73a1c}
-      \strng{fullhashraw}{b9c539bae0c65e11a044590b85f73a1c}
-      \strng{bibnamehash}{b9c539bae0c65e11a044590b85f73a1c}
-      \strng{authorbibnamehash}{b9c539bae0c65e11a044590b85f73a1c}
-      \strng{authornamehash}{b9c539bae0c65e11a044590b85f73a1c}
-      \strng{authorfullhash}{b9c539bae0c65e11a044590b85f73a1c}
-      \strng{authorfullhashraw}{b9c539bae0c65e11a044590b85f73a1c}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{EMPN Policy Brief \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/gottschalk-et-al-2025-making-fiscal-space-policy-responsive.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{Making fiscal space policy-responsive}
-      \field{year}{2025}
-      \true{nocite}
-    \endentry
     \entry{bruegel_germany}{misc}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
@@ -364,8 +241,8 @@
       \strng{authorfullhash}{c41c0b5761221580d20c5825fad663d3}
       \strng{authorfullhashraw}{c41c0b5761221580d20c5825fad663d3}
       \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{extradate}{3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
@@ -399,8 +276,8 @@
       \strng{authornamehash}{365fa95576acf751a9a27cef471d2430}
       \strng{authorfullhash}{365fa95576acf751a9a27cef471d2430}
       \strng{authorfullhashraw}{365fa95576acf751a9a27cef471d2430}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -434,8 +311,8 @@
       \strng{authorfullhash}{c41c0b5761221580d20c5825fad663d3}
       \strng{authorfullhashraw}{c41c0b5761221580d20c5825fad663d3}
       \field{extraname}{4}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
