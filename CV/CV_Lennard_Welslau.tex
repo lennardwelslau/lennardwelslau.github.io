@@ -1,32 +1,14 @@
 \documentclass[a4paper,11pt]{article}
 
-% Packages for symbols and formatting
-\usepackage{latexsym}
-\usepackage{titlesec} % For customizing section titles
-\usepackage{marvosym} % For special symbols
-\usepackage[usenames,dvipsnames]{color} % For colored text
-\usepackage{verbatim} % For multi-line comments
-\usepackage{enumitem} % For customized lists
-\usepackage{hyperref} % For hyperlinks
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue,
-}
-\usepackage{fancyhdr} % For headers and footers
-\usepackage[english]{babel} % For language-specific settings
-\usepackage{csquotes} % For language-specific quotation marks
-\usepackage{tabularx} % For tables with flexible column widths
-\usepackage{geometry} % For precise control over margins
-\geometry{
-    a4paper, % Paper size
-    left=2cm,
-    right=2cm,
-    top=2cm,
-    bottom=2cm
-}
-% \usepackage{glyphtounicode} % For better PDF accessibility (commented out if not available)
+%--------------------------------------------------------------- packages
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}   % must match the biblatex language strings below
+\usepackage{csquotes}
+\usepackage{titlesec}         % section title formatting
+\usepackage{geometry}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
 
-% Bibliography and custom driver for entries
 \usepackage[
     backend=biber,
     style=authoryear,
@@ -35,9 +17,14 @@
     natbib=true
 ]{biblatex}
 \renewcommand*{\bibfont}{\small}
-\DefineBibliographyStrings{UKenglish}{andothers = {et al.}}
+\DefineBibliographyStrings{british}{andothers = {et al.}}
 
-% Redefine the title field format to be bold
+\usepackage{hyperref}         % load last
+\hypersetup{colorlinks=true, urlcolor=blue}
+\urlstyle{same}
+
+%------------------------------------------------------- bibliography style
+% Entries list co-authors only; the driver prints "<title>, with <authors> (<year>), <note>".
 \DeclareFieldFormat{title}{\textbf{#1}}
 
 \DeclareBibliographyDriver{custom}{%
@@ -53,197 +40,181 @@
 \DeclareNameAlias{default}{given-family}
 \DeclareBibliographyAlias{misc}{custom}
 
-% Set page style
+%----------------------------------------------------------------- layout
+% The date lives in the footer rather than the body: as the CV grew it no
+% longer fitted on the last page and pushed a near-empty page after it.
+\usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{} % Clear all header and footer fields
-\setlength{\footskip}{10pt} % Set footer distance
-\renewcommand{\headrulewidth}{0pt} % Remove header line
-\renewcommand{\footrulewidth}{0pt} % Remove footer line
-
-% URL formatting
-\urlstyle{same}
-
-% Set alignment and table spacing
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize Last updated: \today}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
 
-% Section title formatting
-\titleformat{\section}{\large\itshape\vspace{-5pt}}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+\newlength{\entrygap}      \setlength{\entrygap}{7pt}
+\newlength{\rolegap}       \setlength{\rolegap}{3pt}
+\newlength{\titlelift}     \setlength{\titlelift}{-5pt}
 
-% Enable unicode for PDF
-% \pdfgentounicode=1 % Uncomment if needed
+\titleformat{\section}
+  {\large\itshape\vspace{\titlelift}}{}{0em}{}
+  [\titlerule\vspace{\titlelift}]
 
-% Custom command for subheadings
-\newcommand{\Subheading}[4]{   
-    \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
-        \textbf{#1}\textit{\small #2} & {\footnotesize #3} \\
-    \end{tabular*}
-    {\small #4}
-    \vspace{7pt}
+%---------------------------------------------------------------- entries
+% One full-width row: bold/italic label on the left, dates flush right.
+% The row fills \textwidth, so whatever follows starts on the next line.
+\newcommand{\cvrow}[2]{%
+  \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    #1 & {\footnotesize #2} \\
+  \end{tabular*}
 }
 
-% Custom command for institution headings with several entries
-\newcommand{\InstitutionHeading}[1]{%
-\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-    \textbf{#1}\\
-\end{tabular*}}
+% \cventry{institution}{, role}{dates}{body} - a standalone position
+\newcommand{\cventry}[4]{\cvrow{\textbf{#1}\textit{\small #2}}{#3}
+  {\small #4}
+  \vspace{\entrygap}}
 
-% Custom commands for sub-subheadings
-\newcommand{\SubSubheadingA}[3]{   
-    \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
-        \textit{\small #1} & {\footnotesize #2} \\
-    \end{tabular*}
-    {\small #3}
-}
+% \cvhead{institution} - institution heading with several roles beneath
+\newcommand{\cvhead}[1]{\cvrow{\textbf{#1}}{}}
 
-\newcommand{\SubSubheadingB}[3]{   
-    \vspace{3pt}
-    \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
-        \textit{\small #1} & {\footnotesize #2} \\
-    \end{tabular*}
-    {\small #3}
-    \vspace{7pt}
-}
+% \cvrole{role}{dates}{body} - a role under \cvhead
+\newcommand{\cvrole}[3]{\cvrow{\textit{\small #1}}{#2}
+  {\small #3}}
 
-% Custom command for list items
+% \cvrolelast{role}{dates}{body} - the final role under \cvhead
+\newcommand{\cvrolelast}[3]{\vspace{\rolegap}\cvrole{#1}{#2}{#3}\vspace{\entrygap}}
+
+% \myitem{text} - dash-led bullet with hanging indent
 \newcommand{\myitem}[1]{\hangindent=1em\hangafter=1\textbf{--}~#1\par}
 
 \begin{document}
 
-% Centered name and contact information
 \begin{center}
-    {\Large Lennard Alexander Welslau} \\ 
-    \href{mailto:lennard.welslau@gmail.com}{lennard.welslau@gmail.com} $|$ \href{https://lennardwelslau.github.io/}{lennardwelslau.github.io}
+    {\Large Lennard Alexander Welslau} \\
+    \href{mailto:lennard.welslau@gmail.com}{lennard.welslau@gmail.com} $|$
+    \href{https://lennardwelslau.github.io/}{lennardwelslau.github.io}
 \end{center}
 
-%--------EDUCATION--------
+%--------------------------------------------------------------- EDUCATION
 \section{Education}
 
-\InstitutionHeading{University of Copenhagen}
+\cvhead{University of Copenhagen}
 
-    \SubSubheadingA{PhD Economics}{since 09/2024}
-    {\\
-    \myitem{Focus: Macroeconomics; Advisor: Søren Hove Ravn}
-    \myitem{Courses: Advanced macroeconometrics, advanced microeconometrics, dynamic programming, economic growth, business cycle analysis, heterogeneous agent models, tools for macroeconomists (summer school)}
-    }
+\cvrole{PhD Economics}{since 09/2024}
+{\\
+\myitem{Focus: Macroeconomics; Advisor: Søren Hove Ravn}
+\myitem{Courses in advanced economic theory, macroeconometrics, microeconometrics,
+dynamic programming, economic growth, business cycles, heterogeneous agent models}
+}
 
-    \SubSubheadingB{MSc Economics}{09/2019--09/2022}
-    {\\
-    \myitem{Thesis: Wage rigidity and shock transmission in open economy HANK models; 
-    supervised by Jeppe Druedahl; highest grade (12)
-    \begin{footnotesize}[\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5474969}{PDF}]\end{footnotesize}}
-    \myitem{Courses: Econometrics, economic theory, public finance, international political economy}
-    \myitem{GPA: 10.8 (top decile)}
-    }
+\cvrolelast{MSc Economics}{09/2019--09/2022}
+{\\
+\myitem{Thesis: Wage rigidity and shock transmission in open economy HANK models;
+supervised by Jeppe Druedahl; highest grade (12)
+\begin{footnotesize}[\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5474969}{PDF}]\end{footnotesize}}
+\myitem{Courses in economic theory, econometrics, public finance,
+international political economy, economic sociology}
+\myitem{GPA: 10.8 (top decile)}
+}
 
-\Subheading
-    {University College Freiburg}{, BA Liberal Arts and Sciences}{10/2014--08/2018}
-    {\\
-    \myitem{Thesis: Philosophy of science and finance theory; 
-    supervised by Lars Feld; highest grade (1.0)
-    \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/Welslau_BA_Thesis_2018_Lakatos_Finance_Theory.pdf}{PDF}]\end{footnotesize}}
-    \myitem{Courses: Mathematics, statistics, economic theory, finance,
-    philosophy of science, comparative politics, political theory, sociological theory, 
-    public international law, international relations}
-    \myitem{GPA: 1.5 (excellent)}
-    }
+\cventry{New York University}{, Visiting PhD Student}{Fall 2026}
+{Department of Economics; host: Simon Gilchrist}
 
-\Subheading
-    {Universidad de Buenos Aires}{, Exchange}{03/2017--07/2017}
-    {Courses in development economics, international economics, and human rights}
+\cventry{University College Freiburg}{, BA Liberal Arts and Sciences}{10/2014--08/2018}
+{\\
+\myitem{Thesis: Philosophy of science and finance theory;
+supervised by Lars Feld; highest grade (1.0)
+\begin{footnotesize}[\href{https://lennardwelslau.github.io/research/welslau-2018-lakatos-finance-theory-ba-thesis.pdf}{PDF}]\end{footnotesize}}
+\myitem{Courses in mathematics, statistics, economic theory, finance,
+philosophy of science, comparative politics, political theory, sociological theory,
+public international law, international relations}
+\myitem{GPA: 1.5 (excellent)}
+}
 
-\Subheading
-    {Harvard University}{, Summer School}{06/2016--08/2016}
-    {Courses in sustainability, science and technology studies}
+\cventry{Universidad de Buenos Aires}{, Exchange}{03/2017--07/2017}
+{Courses in development economics, international economics, and human rights}
 
-%--------WORK IN PROGRESS--------
+\cventry{Harvard University}{, Summer School}{06/2016--08/2016}
+{Courses in sustainability, science and technology studies}
+
+%--------------------------------------------------------- WORK IN PROGRESS
 \section{Work in Progress}
-\vspace{3pt}
+\vspace{\rolegap}
 
 \begin{small}\textbf{Financial Frictions and Firm Growth}, with Tobias Renkin and Filip Rozsypal\end{small}
 
-\vspace{7pt}
+\vspace{\entrygap}
 
-%--------PUBLICATIONS--------
+%------------------------------------------------------------ PUBLICATIONS
 \section{Selected Publications}
-\vspace{3pt}
+\vspace{\rolegap}
 \setlength{\bibitemsep}{1.4ex}
 \begin{refsection}[bibliography.bib]
 \nocite{*}
 \printbibliography[heading=none]
 \end{refsection}
 
-%--------Work EXPERIENCE--------
+%--------------------------------------------------------- WORK EXPERIENCE
 \section{Work Experience}
 
-\Subheading
-    {Danmarks Nationalbank}{, Resident PhD Fellow}{since 09/2024}
-    {Research unit; Firm dynamics and applied econometrics}
+\cventry{Danmarks Nationalbank}{, Resident PhD Fellow}{since 09/2024}
+{Research unit; firm dynamics, financial frictions, heterogeneous agent models}
 
-\Subheading
-    {Dezernat Zukunft}{, Policy Fellow (pro bono)}{since 09/2024}
-    {Co-authored publication on potential output modelling, advised on DSA modelling}
+\cventry{European Macro Policy Network (EMPN)}{, Policy Fellow (pro bono)}{since 09/2024}
+{Co-authored publication on potential output modelling, advised on DSA modelling}
 
-\InstitutionHeading{Bruegel}
+\cvhead{Bruegel}
 
-    \SubSubheadingA{Research Contractor}{09/2024--09/2025}
-    {Co-authored publications on German fiscal policy, debt sustainability,
-    and EU fiscal integration}
+\cvrole{Research Contractor}{09/2024--09/2025}
+{Co-authored publications on German fiscal policy, debt sustainability,
+and EU fiscal integration}
 
-    \SubSubheadingB{Research Analyst}{10/2022--09/2024}
-    {Economic and statistical modelling; co-authored publications on macroeconomics, 
-    economic governance, trade, and inequality; 
-    developed Bruegel's DSA model; 
-    automated data collection and web apps;
-    research presented at the ECB, ECOFIN, IMF, European Parliament, and national governments 
-    (Python, R, Excel)}
+\cvrolelast{Research Analyst}{10/2022--09/2024}
+{Economic and statistical modelling; co-authored publications on macroeconomics,
+economic governance, trade, and inequality;
+developed Bruegel's debt sustainability analysis;
+automated data collection and web apps;
+research presented at the ECB, ECOFIN, IMF, European Parliament, and national governments
+(Python, R, Excel)}
 
+\cvhead{United Nations ECLAC}
 
-\InstitutionHeading{United Nations ECLAC}
+\cvrole{Economic Affairs Consultant}{06/2021--01/2022}
+{Published paper on export competition using structural gravity models,
+co-authored book chapter on US--China trade tensions}
 
-    \SubSubheadingA{Economic Affairs Consultant}{06/2021--01/2022}
-    {Published paper on export competition using structural gravity models, 
-    co-authored book chapter on US-China trade tensions}
+\cvrolelast{Carlo Schmid Fellow}{09/2020--04/2021}
+{Merit-based scholarship program; prepared statistical analyses of trade data,
+literature reviews, and briefs on US economic policy (Stata, Python)}
 
-    \SubSubheadingB{Carlo Schmid Fellow}{09/2020--04/2021}
-    {Merit-based scholarship program; prepared statistical analyses of trade data, 
-    literature reviews, and briefs on US economic policy (Stata, Python)}
+\cventry{Copenhagen Business School}{, Research Assistant}{01/2020--09/2021}
+{Project on urban circular economy; prepared literature reviews and
+resources for policymakers}
 
-\Subheading
-    {Copenhagen Business School}{, Research Assistant}{01/2020--09/2021}
-    {Project on urban circular economy; prepared literature reviews and 
-    resources for SMEs and policymakers}
+\cventry{European Central Bank}{, Trainee}{09/2018--03/2019}
+{Market Infrastructure and Payments; test and release management of EU payment systems;
+prepared and presented statistics, strategy, and legal documents for senior management (Excel)}
 
-\Subheading
-    {European Central Bank}{, Trainee}{09/2018--03/2019}
-    {Market Infrastructure and Payments; test and release management of EU payment systems; prepared and presented 
-    statistics, strategy, and legal documents for senior management (Excel)}
+\cventry{University of Freiburg}{, Research Assistant}{03/2018--09/2018}
+{Chair of economic policy; literature reviews and data analysis (Excel, R)}
 
-\Subheading
-    {University of Freiburg}{, Research Assistant}{03/2018--09/2018}
-    {Chair of economic policy; literature reviews and data analysis (Excel, R)}
-
-%--------OTHER--------
+%------------------------------------------------------------------ OTHER
 \section{Miscellaneous}
 
-\Subheading
-    {Languages}{}{}
-    {\\
-    \myitem{German (native); English, Spanish (fluent); Danish, French (basic); Latin (diploma)}
-    \myitem{Python, Stata, Excel (advanced); Matlab, R, Julia, Git, SQL, Java, HTML, CSS, \LaTeX\space(intermediate)}
-    }
+\cventry{Languages}{}{}
+{\\
+\myitem{German (native); English, Spanish (fluent); Danish, French (basic); Latin (diploma)}
+\myitem{Python, Stata, Excel (advanced); Matlab, R, Julia, Git, SQL, Java, HTML, CSS, \LaTeX\space(intermediate)}
+}
 
-\Subheading
-    {Awards and grants}{}{}
-    {\\
-    Carlo Schmid scholarship (DAAD, German Academic Scholarship Foundation), 
-    DAAD scholarship, UCPH International scholarship
-    } 
-
-\vfill
-\begin{center}
-{\footnotesize Last updated: \today}
-\end{center}
+\cventry{Awards and grants}{}{}
+{\\
+Full PhD scholarship by Danmarks Nationalbank,
+Bikuben Foundation Fellow, William Demant Foundation grant,
+Carlo Schmid scholarship (DAAD, German Academic Scholarship Foundation),
+DAAD scholarship, UCPH International scholarship
+}
 
 \end{document}

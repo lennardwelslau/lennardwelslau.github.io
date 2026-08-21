@@ -1,566 +1,372 @@
-/* Reset default styles */
-html, body, ul, li {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+/* =========================================================================
+   Lennard Welslau - personal site
+   Single scrolling page. Greyscale palette to match the b/w portrait.
+   ========================================================================= */
+
+:root {
+  --ink:        #222;
+  --ink-soft:   #444;
+  --muted:      #666;
+  --muted-soft: #767676;
+  --rule:       #ddd;
+  --rule-soft:  #eee;
+  --bg:         #fff;
+  --bg-soft:    #f7f7f7;
+  --bar:        #a9a9a9;          /* darkgrey, as before */
+  --measure:    46rem;
+  --nav-h:      50px;
 }
 
-/* Global styles */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  font-family: Roboto, sans-serif;
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 300;
   line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-main {
-  margin-top: 10px;
-  flex-grow: 1;
+main { flex: 1 0 auto; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--bg);
+  color: var(--ink);
+  padding: 10px 16px;
+  z-index: 2000;
+}
+.skip-link:focus { left: 0; }
+
+/* ---------------------------------------------------------------- layout */
 
 .container {
-  max-width: 750px;
+  max-width: var(--measure);
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
-.link {
-  text-decoration: none;
-  color: grey; /* Adjust to match your desired link color */
+section {
+  scroll-margin-top: calc(var(--nav-h) + 12px);
+  padding: 8px 0 12px;
 }
 
-.link:visited {
-  color: grey; /* Ensure visited links maintain the same color */
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-/* Navigation bar styles */
-.nav-links-container {
-  display: flex; /* Ensure nav links are visible in desktop view */
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-icon {
-  display: none; /* Hide the hamburger icon in desktop view */
-}
+/* ------------------------------------------------------------------- nav */
 
 nav {
-  background-color: white;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 50px;
-  transition: background-color 0.25s ease; /* Add a smooth transition effect for the background color */
-  z-index: 1000; /* Set a higher z-index to keep the navigation bar in the foreground */
+  height: var(--nav-h);
+  background: var(--bg);
+  z-index: 1000;
+  transition: background-color .25s ease;
 }
 
-nav ul {
+nav.scrolled { background: var(--bar); }
+
+.nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  white-space: nowrap; /* Prevent text from wrapping */
-  text-overflow: ellipsis; /* Display ellipsis (...) for text that overflows */
-  height: 100%;
+  height: var(--nav-h);
+  white-space: nowrap;
 }
 
-nav ul li a {
-  list-style: none;
-  margin: 0;
-  color: grey;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px 30px;
-  align-items: center;     /* Vertically center the text inside the li */
+.nav-links a {
   display: flex;
-  justify-content: center;
-  transition: font-size 0.25s ease, background-color 0.25s ease, color 0.25s ease; /* Add a smooth transition effect */
+  align-items: center;
+  height: 100%;
+  padding: 0 22px;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .01em;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
 }
 
-nav li:hover {
-  transform: scale(1.2); /* Increase the font size on hover (adjust as needed) */
+.nav-links a:hover,
+.nav-links a.active { color: var(--ink); border-bottom-color: var(--ink); }
+
+nav.scrolled .nav-links a { color: #fff; }
+nav.scrolled .nav-links a:hover,
+nav.scrolled .nav-links a.active { color: #fff; border-bottom-color: #fff; }
+
+.menu-icon {
+  display: none;
+  background: none;
+  border: 0;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--muted);
 }
 
-.scrolled {
-  background-color: darkgrey;
-}
+.menu-icon svg { width: 22px; height: 22px; fill: currentColor; display: block; }
 
-.scrolled ul li a {
-  color: white;
-  transition: color 0.25 ease; /* Add a smooth transition effect for background color, text color, and padding */
-}
+/* ----------------------------------------------------------------- about */
 
-/* Main styles */
-main ul li {
-  margin-bottom: 5px;          /* Spacing between list items */
-  position: relative;          /* Positioning context for pseudo-element */
-  padding-left: 25px;          /* Space between bullet and text */
-}
-
-main ul li::before {
-  content: '\2022';            /* Unicode character for a bullet (disc) */
-  color: grey;                 /* Bullet color */
-  position: absolute;          /* Position bullet relative to list item */
-  left: 0;                     /* Align bullet to the left */
-  font-size: 1em;              /* Bullet size */
-}
-
-/* About section styles */
-#about {
-  margin-top: 60px; /* Adjust the space between navigation bar and title */
-}
+#about { padding-top: calc(var(--nav-h) + 30px); }
 
 .about-image {
   display: flex;
-  align-items: center;
-  justify-content: left; /* Center the content horizontally */
-  text-align: left;
-  flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .about-image img {
-  width: 200px; 
-  display: block;
+  width: 200px;
   height: auto;
-  margin-right: 30px;
+  display: block;
+  flex: none;
 }
 
-.about-links li::before {
-  content: none; /* Remove the bullet */
+.about-links h1 {
+  font-size: 1.75em;
+  font-weight: 300;
+  margin: 0 0 .6em;
+  letter-spacing: .01em;
 }
 
-.about-links li {
-  padding-left: 0; /* Remove padding left */
-  margin-bottom: 10px; /* Optional: spacing between items */
-}
+.about-links li { margin-bottom: 8px; }
 
-.about-links a:hover {
-  text-decoration: underline; 
-}
-
-.about-description {
-  margin-top: 20px;
-}
-
-.about-description a {
+.about-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
   text-decoration: none;
+  font-size: .95em;
 }
 
-.about-description a:visited {
-  color: blue;
-}
+.about-links a:hover { color: var(--ink); text-decoration: underline; }
 
-.about-description a:hover {
-  text-decoration: underline; 
-}
+.about-links svg { width: 17px; height: 17px; fill: currentColor; flex: none; }
+
+.about-description { margin-top: 26px; }
+.about-description p { margin: 0 0 .8em; }
+.about-description a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+
+/* --------------------------------------------------------------- headings */
 
 h2 {
-  text-align: center;
-  border-bottom: 2px solid #ccc; /* Add a border under section headings */
-  padding-bottom: 5px; /* Add some padding for better spacing */
-  margin-top: 25px;
-  margin-bottom: 15px; /* Adjust as needed for spacing between headings and content */
+  font-size: 1.35em;
+  font-weight: 400;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 2.2em 0 1em;
+  padding-bottom: .3em;
+  border-bottom: 1px solid var(--rule);
 }
 
 h3 {
-  font-size: 1.5em;
-  margin-bottom: 1em;
-  margin-top: 1.5em; 
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0;
+  font-size: 1.02em;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: .02em;
+  margin: 1.9em 0 .7em;
 }
 
-h4 {
-  font-size: 1.2em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  padding-bottom: 0;
-}
+/* ----------------------------------------------------------- publications
+   One entry = one line: title and outlet run together on the left, links on
+   the right. The whole line is the <summary>, so clicking anywhere opens the
+   abstract; the links inside are guarded in script.js. */
 
-/* CV Container */
-.cv-container {
-  margin-top: 80px; /* Adjust to account for fixed navigation bar */
-  padding-bottom: 40px; /* Space before footer */
-}
+.bibliography { font-size: .95em; }
+.bibliography > li + li { border-top: 1px solid var(--rule-soft); }
 
-/* CV Sections */
-.cv-section {
-  margin-bottom: 30px;
-}
-
-.download-cv-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 3em;
-  background-color: #ccc; /* Green background */
-  color: white; /* White text */
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.download-cv-button:hover {
-  background-color: grey; /* Darker green on hover */
-}
-
-.download-cv-button i {
-  margin-right: 8px; /* Space between icon and text */
-}
-
-/* === START: CV Section Styles === */
-
-#cv ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#cv li {
+.pub > summary,
+.pub-row {
   display: flex;
-  margin-bottom: 0.5em;
-  padding-left: 0; /* Reset padding */
-}
-
-#cv li::before {
-  content: none; /* Remove the pseudo-element bullet */
-}
-
-#cv .date {
-  flex: 0 0 120px; /* Fixed width for the date column */
-  color: #555; 
-}
-
-#cv .details {
-  flex: 1;
-}
-
-#cv .institution {
-  font-weight: normal;
-}
-
-#cv .role {
-  font-style: italic;
-}
-
-/* === END: CV Section Styles === */
-
-/* === START: Research Section Styles === */
-
-.publication-entry {
-  display: flex;
-  flex-direction: column; /* Stacks the main content and the abstract */
-  margin-bottom: 0.5em;
-}
-
-.publication-main {
-  display: flex;
-  flex-direction: row;
+  align-items: baseline;
   justify-content: space-between;
-  gap: 0;
+  gap: 1.4em;
+  padding: .45em 0;
+  line-height: 1.4;
 }
 
-.publication-details {
-  flex: 3; /* Left column (details) takes more space */
+.pub > summary {
+  list-style: none;
+  cursor: pointer;
 }
+.pub > summary::-webkit-details-marker { display: none; }
+.pub > summary:hover .pub-title { text-decoration: underline; }
 
-.publication-title {
-  font-weight: normal;
-  font-size: 1em;
-  margin-bottom: 0.25em;
-}
+.pub-text { flex: 1 1 auto; }
 
-.publication-meta {
+.pub-title { color: var(--ink); }
+
+.pub-meta {
   font-style: italic;
-  color: #555;
-  margin-bottom: 0.5em;
-  font-size: 0.9em;
+  color: var(--muted);
+  font-size: .92em;
 }
 
-.publication-links {
-  flex: 1; /* Right column (links) takes less space */
-  text-align: right;
+.pub-notes {
+  display: block;
+  font-size: .86em;
+  color: var(--muted-soft);
+}
+
+.pub-links {
+  flex: 0 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Align buttons to the right */
-  gap: 8px;
+  align-items: baseline;
+  gap: .9em;
+  white-space: nowrap;
+  font-size: .84em;
 }
 
-/* Common style for buttons in the right column */
-.publication-links .button-link {
-  display: inline-block;
-  padding: 2px 6px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+/* Links are plain text, not boxes -- boxes made the list heavy to scan. */
+.button-link,
+.abs-cue {
+  color: var(--muted);
   text-decoration: none;
-  color: #333;
-  background-color: #f9f9f9;
-  font-size: 12px;
-  font-weight: normal;
-  cursor: pointer;
-  width: 100px;
-  text-align: center;
+  border-bottom: 1px solid var(--rule);
+  transition: color .15s ease, border-color .15s ease;
 }
 
-.publication-links .button-link:hover {
-  background-color: #eee;
-  border-color: #999;
-  text-decoration: none;
+.button-link:hover,
+.pub > summary:hover .abs-cue {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
 }
 
-.publication-notes {
-  font-size: 0.9em;
-  color: #777;
-  margin-top: 0.25em;
-}
-
-.bibliography li::before {
-    content: none; /* Remove default list bullets */
-}
-
-.bibliography {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-hr.section-divider {
-  border: 0;
-  height: 1px;
-  background: #ddd;
-  margin: 40px 0;
-}
-
-#code .bibliography {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 1em;
-}
-
-/* === END: Research Section Styles === */
-
-.abstract-button {
-  color: grey; 
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.abstract-button:hover {
-  text-decoration: underline; 
-}
+.abs-cue::after { content: " +"; }
+.pub[open] > summary .abs-cue::after { content: " \2212"; }
 
 .abstract {
-  display: none; /* Hidden by default */
-  margin-top: 5px; 
-  font-size: 0.9em; 
-  box-sizing: border-box;
-  background-color: #f9f9f9; /* Very light grey */
-  /* Negative margins to break out of the container */
-  margin-left: calc(-100vw + 100%);
-  margin-right: calc(-100vw + 100%);
-  /* Padding to push the content back into the container's bounds */
-  padding-top: 0.9em;
-  padding-bottom: 0.9em;
-  padding-left: calc(100vw - 100%);
-  padding-right: calc(100vw - 100%);
+  margin: 0 0 .8em;
+  padding-left: 1em;
+  border-left: 2px solid var(--rule);
+  font-size: .9em;
+  color: var(--ink-soft);
+  text-align: justify;
+  hyphens: auto;
 }
 
-/* Default state: add a '+' before the button text */
-.abstract-button::before {
-  content: "+ ";
-  font-weight: bold;
-  color: grey
+/* --------------------------------------------- lower half: policy & code */
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: var(--rule);
+  margin: 56px 0 0;
 }
 
-/* Active state: change the content to a '−' */
-.abstract-button.active::before {
-  content: "− "; /* Unicode character for "minus" sign (-) */
-  font-weight: bold;
-  color: grey;
+.secondary { color: var(--ink-soft); }
+.secondary .publication-title { font-size: .95em; }
+.secondary .publication-meta { font-size: .85em; color: var(--muted); }
+.secondary .bibliography > li { margin-bottom: .85em; }
+.secondary h2 { color: var(--muted); }
+
+.section-note {
+  font-size: .9em;
+  color: var(--muted);
+  margin: -.4em 0 1.4em;
 }
 
-/* Code section styles */
+/* ---------------------------------------------------------------- footer */
 
-.project li {
-  margin-bottom: 0.5em;
-  position: relative;
-  padding-left: 25px; 
-}
-
-.project li::before {
-  content: '\2022'; /* Unicode character for a bullet (disc) */
-  color: grey; 
-  position: absolute;
-  left: 5px;
-}
-
-.project li a {
-  text-decoration: none;
-}
-
-.project li a:visited {
-  color: grey;
-}
-
-.project li a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
 footer {
-  background-color: darkgrey;
-  color: white;
-  height: 40px;
-  padding: 0;
-  text-align: center;
+  flex: none;
+  background: var(--bar);
+  color: #fff;
+  min-height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+  font-size: .85em;
+  padding: 8px 20px;
+  margin-top: 48px;
 }
 
+footer a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
 
-/* Adjusted container styles for mobile */
-@media (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-}
+/* ---------------------------------------------------------------- mobile */
 
 @media (max-width: 768px) {
-  main {
-    margin-top: 0px;
-    flex-grow: 1;
-  }
-}  
+  .container { padding: 0 16px; }
 
-/* Mobile view: Hide the menu by default and show the hamburger icon */
-@media (max-width: 768px) {
   .nav-links-container {
-    display: none; /* Hide the links by default in mobile view */
-  }
-
-  .menu-icon {
-    display: block; /* Show the hamburger icon */
-    font-size: 24px;
-    cursor: pointer;
-    color: grey;
+    display: none;
     position: absolute;
-    top: 10px;
-    right: 20px;
-  }
-
-  .scrolled .menu-icon:not(.active) {
-    color: white;
-  }
-
-  .menu-icon.active {
-    color: grey !important; /* Use !important to override other rules */
-  }
-
-  .scrolled ul li a {
-    color: grey;
-  }
-
-  .nav-links-container.show {
-    display: flex; /* Show the nav links when toggled */
-    flex-direction: column; /* Stack links vertically in mobile view */
-    background-color: white;
+    top: var(--nav-h);
+    left: 0;
     width: 100%;
-    text-align: center;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
   }
+  .nav-links-container.show { display: block; }
 
-  nav ul {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  nav ul li {
-    width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid grey;
-  }
-
-  nav ul li a {
-    padding: 15px;
-    display: block;
-    color: grey;
-  }
-}
-
-/* Adjusted h2 for mobile view */
-@media (max-width: 768px) {
-  h2 {
-    margin-top: 1.5em;
-  }
-  h3 {
-    margin-top: 1.5em;
-  }
-}
-
-/* Adjusted about section for mobile */
-@media (max-width: 768px) {
-  .about-image {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-image img {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-links {
-    text-align: center;
+  .nav-links { flex-direction: column; height: auto; }
+  .nav-links li { width: 100%; border-bottom: 1px solid var(--rule-soft); }
+  .nav-links li:last-child { border-bottom: 0; }
+  .nav-links a {
+    height: auto;
+    padding: 14px;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    color: var(--muted);
+    border-bottom: 0;
   }
+  nav.scrolled .nav-links a { color: var(--muted); }
 
-  .about-links li {
-    display: inline-flex;
-    margin: 2.5px 2.5px;
-  }
+  .menu-icon { display: block; position: absolute; top: 6px; right: 12px; }
+  nav.scrolled .menu-icon[aria-expanded="false"] { color: #fff; }
+
+  .about-image { flex-direction: column; align-items: center; gap: 18px; text-align: center; }
+  .about-links ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; }
+  .about-links li { margin-bottom: 0; }
+  .about-description { text-align: justify; hyphens: auto; }
+
+  h2 { margin-top: 1.9em; }
 }
 
 @media (max-width: 600px) {
-  .about-description {
-    text-align: justify;
-  }
+  .pub > summary,
+  .pub-row { flex-direction: column; gap: .35em; }
+  .pub-links { align-self: flex-start; flex-wrap: wrap; }
 }
 
-@media (max-width: 600px) {
-  .publication-main {
-    flex-direction: column;
-  }
-  .publication-links {
-    text-align: left;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 10px;
-    flex-wrap: wrap;
-  }
-  .publication-notes {
-    text-align: left;
-    width: 100%;
-    margin-top: 0.25em;
-  }
+/* --------------------------------------------------------- a11y & print */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
 
-/* Footer */
-footer {
-  background-color: darkgrey;
-  color: white;
-  height: 40px;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media print {
+  nav, footer, .menu-icon, .button-link, .skip-link { display: none !important; }
+  body { color: #000; font-size: 10pt; }
+  #about { padding-top: 0; }
+  .about-image img { width: 120px; }
+  .abstract { background: none; border-left: 0; padding: 0; }
+  details[open] .abstract { display: block; }
+  a { text-decoration: none; }
+  section { page-break-inside: auto; }
 }

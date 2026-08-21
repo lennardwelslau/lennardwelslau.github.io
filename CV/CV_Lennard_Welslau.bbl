@@ -18,108 +18,8 @@
 
 
 \refsection{1}
-  \datalist[entry]{ynt/global//global/global/global}
-    \entry{eu_borrowing_2}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=919bc85f8cfaa2d630239a7248417cc7}{%
-           family={Claeys},
-           familyi={C\bibinitperiod},
-           given={Grégory},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e0e8178c3426f8eaa50b674306cc0f1f}{%
-           family={McCaffrey},
-           familyi={M\bibinitperiod},
-           given={Conor},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{365fa95576acf751a9a27cef471d2430}
-      \strng{fullhash}{365fa95576acf751a9a27cef471d2430}
-      \strng{fullhashraw}{365fa95576acf751a9a27cef471d2430}
-      \strng{bibnamehash}{365fa95576acf751a9a27cef471d2430}
-      \strng{authorbibnamehash}{365fa95576acf751a9a27cef471d2430}
-      \strng{authornamehash}{365fa95576acf751a9a27cef471d2430}
-      \strng{authorfullhash}{365fa95576acf751a9a27cef471d2430}
-      \strng{authorfullhashraw}{365fa95576acf751a9a27cef471d2430}
-      \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Briefing for the Committee on Budgets (BUDG), European Parliament \begin{footnotesize}[\href{https://www.europarl.europa.eu/RegData/etudes/BRIE/2023/754286/IPOL_BRI(2023)754286_EN.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{An estimate of the European Union's long-term borrowing cost bill}
-      \field{year}{2023}
-      \true{nocite}
-    \endentry
-    \entry{eu_borrowing_1}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=919bc85f8cfaa2d630239a7248417cc7}{%
-           family={Claeys},
-           familyi={C\bibinitperiod},
-           given={Grégory},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e0e8178c3426f8eaa50b674306cc0f1f}{%
-           family={McCaffrey},
-           familyi={M\bibinitperiod},
-           given={Conor},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{365fa95576acf751a9a27cef471d2430}
-      \strng{fullhash}{365fa95576acf751a9a27cef471d2430}
-      \strng{fullhashraw}{365fa95576acf751a9a27cef471d2430}
-      \strng{bibnamehash}{365fa95576acf751a9a27cef471d2430}
-      \strng{authorbibnamehash}{365fa95576acf751a9a27cef471d2430}
-      \strng{authornamehash}{365fa95576acf751a9a27cef471d2430}
-      \strng{authorfullhash}{365fa95576acf751a9a27cef471d2430}
-      \strng{authorfullhashraw}{365fa95576acf751a9a27cef471d2430}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Briefing for the Committee on Budgets (BUDG), European Parliament \begin{footnotesize}[\href{https://www.bruegel.org/system/files/2023-06/PB\%2012\%202023.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{The rising cost of European Union borrowing and what to do about it}
-      \field{year}{2023}
-      \true{nocite}
-    \endentry
-    \entry{ep_rrf}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
-           family={Darvas},
-           familyi={D\bibinitperiod},
-           given={Zsolt},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{3d17a58b8d85a30a8b0f894e8699a689}
-      \strng{fullhash}{3d17a58b8d85a30a8b0f894e8699a689}
-      \strng{fullhashraw}{3d17a58b8d85a30a8b0f894e8699a689}
-      \strng{bibnamehash}{3d17a58b8d85a30a8b0f894e8699a689}
-      \strng{authorbibnamehash}{3d17a58b8d85a30a8b0f894e8699a689}
-      \strng{authornamehash}{3d17a58b8d85a30a8b0f894e8699a689}
-      \strng{authorfullhash}{3d17a58b8d85a30a8b0f894e8699a689}
-      \strng{authorfullhashraw}{3d17a58b8d85a30a8b0f894e8699a689}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Economic Governance Support Unit (EGOV) Study, European Parliament \begin{footnotesize}[\href{https://www.europarl.europa.eu/RegData/etudes/IDAN/2023/741748/IPOL_IDA(2023)741748_EN.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{First lessons from the Recovery and Resilience Facility lessons for the EU economic governance framework}
-      \field{year}{2023}
-      \true{nocite}
-    \endentry
-    \entry{fiscal_rules_wp}{misc}{}{}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{jep_fiscal}{misc}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
            family={Darvas},
@@ -145,159 +45,54 @@
       \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Bruegel Working Paper, \begin{footnotesize}[\href{https://www.bruegel.org/sites/default/files/2023-09/WP\%2016\_1.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{A quantitative evaluation of the European Commission's fiscal governance proposal}
-      \field{year}{2023}
+      \field{note}{Journal of Economic Perspectives 39(4), 49--74 \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/darvas-welslau-zettelmeyer-2025-sovereign-debt-fiscal-integration.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{Sovereign Debt and Fiscal Integration in the European Union}
+      \field{year}{2025}
       \true{nocite}
     \endentry
-    \entry{bmz}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=98aabf42a387b190e7bafaa304915f4b}{%
-           family={Zettelmeyer},
-           familyi={Z\bibinitperiod},
-           given={Jeromin},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{98aabf42a387b190e7bafaa304915f4b}
-      \strng{fullhash}{98aabf42a387b190e7bafaa304915f4b}
-      \strng{fullhashraw}{98aabf42a387b190e7bafaa304915f4b}
-      \strng{bibnamehash}{98aabf42a387b190e7bafaa304915f4b}
-      \strng{authorbibnamehash}{98aabf42a387b190e7bafaa304915f4b}
-      \strng{authornamehash}{98aabf42a387b190e7bafaa304915f4b}
-      \strng{authorfullhash}{98aabf42a387b190e7bafaa304915f4b}
-      \strng{authorfullhashraw}{98aabf42a387b190e7bafaa304915f4b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Policy Paper for the German Ministry of Economic Cooperation and Development \begin{footnotesize}[\href{https://www.bruegel.org/system/files/2023-05/Internationale\%20Staatsverschuldung\%20Bruegel_.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{Internationale Staatsverschuldung, Schuldenrestrukturierungen und mögliche Handlungsoptionen für das BMZ}
-      \field{year}{2023}
-      \true{nocite}
-    \endentry
-    \entry{swedish_ecofin}{misc}{}{}
-      \name{author}{4}{ul=1}{%
-        {{un=0,uniquepart=base,hash=98aabf42a387b190e7bafaa304915f4b}{%
-           family={Zettelmeyer},
-           familyi={Z\bibinitperiod},
-           given={Jeromin},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=919bc85f8cfaa2d630239a7248417cc7}{%
-           family={Claeys},
-           familyi={C\bibinitperiod},
-           given={Grégory},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
+    \entry{imfer_debt}{misc}{}{}
+      \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
            family={Darvas},
            familyi={D\bibinitperiod},
            given={Zsolt},
            giveni={Z\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=4e07b3040937734a765527ee6e80e385}{%
-           family={Zenios},
+        {{un=0,uniquepart=base,hash=fc7ad48b828f120476c51582ccbd22cf}{%
+           family={Huertas},
+           familyi={H\bibinitperiod},
+           given={Gonzalo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98aabf42a387b190e7bafaa304915f4b}{%
+           family={Zettelmeyer},
            familyi={Z\bibinitperiod},
-           given={Stavros},
-           giveni={S\bibinitperiod},
+           given={Jeromin},
+           giveni={J\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{ccd0ba068f0f245caaa325aab7e00a55}
-      \strng{fullhash}{1cdef46c8c5c4a730805e67d5273901e}
-      \strng{fullhashraw}{1cdef46c8c5c4a730805e67d5273901e}
-      \strng{bibnamehash}{ccd0ba068f0f245caaa325aab7e00a55}
-      \strng{authorbibnamehash}{ccd0ba068f0f245caaa325aab7e00a55}
-      \strng{authornamehash}{ccd0ba068f0f245caaa325aab7e00a55}
-      \strng{authorfullhash}{1cdef46c8c5c4a730805e67d5273901e}
-      \strng{authorfullhashraw}{1cdef46c8c5c4a730805e67d5273901e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{743c8dcfb1355d60a114deeacad57aec}
+      \strng{fullhash}{743c8dcfb1355d60a114deeacad57aec}
+      \strng{fullhashraw}{743c8dcfb1355d60a114deeacad57aec}
+      \strng{bibnamehash}{743c8dcfb1355d60a114deeacad57aec}
+      \strng{authorbibnamehash}{743c8dcfb1355d60a114deeacad57aec}
+      \strng{authornamehash}{743c8dcfb1355d60a114deeacad57aec}
+      \strng{authorfullhash}{743c8dcfb1355d60a114deeacad57aec}
+      \strng{authorfullhashraw}{743c8dcfb1355d60a114deeacad57aec}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Bruegel Policy Brief \begin{footnotesize}[\href{https://www.bruegel.org/system/files/2023-05/PB\%2010\%202023.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{The longer-term fiscal challenges facing the European Union}
-      \field{year}{2023}
-      \true{nocite}
-    \endentry
-    \entry{eclac_series}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=fb11309adf6d9f5799849501ddd8a994}{%
-           family={Artecona},
-           familyi={A\bibinitperiod},
-           given={Raqeul},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ab1d7c3aa2fca9a93efcc40a530f5c63}{%
-           family={Perrotti},
-           familyi={P\bibinitperiod},
-           given={Daniel\bibnamedelima E.},
-           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{fullhash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{fullhashraw}{d99e653f6b867126827c93c258e1c41b}
-      \strng{bibnamehash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{authorbibnamehash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{authornamehash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{authorfullhash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{authorfullhashraw}{d99e653f6b867126827c93c258e1c41b}
-      \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{World Economy \begin{footnotesize}[\href{https://onlinelibrary.wiley.com/doi/10.1111/twec.13568}{PDF}]\end{footnotesize}}
-      \field{title}{Export competition between China and Latin America and the Caribbean in the United States market}
-      \field{year}{2024}
-      \true{nocite}
-    \endentry
-    \entry{kas_chapter}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=fb11309adf6d9f5799849501ddd8a994}{%
-           family={Artecona},
-           familyi={A\bibinitperiod},
-           given={Raqeul},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ab1d7c3aa2fca9a93efcc40a530f5c63}{%
-           family={Perrotti},
-           familyi={P\bibinitperiod},
-           given={Daniel\bibnamedelima E.},
-           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{fullhash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{fullhashraw}{d99e653f6b867126827c93c258e1c41b}
-      \strng{bibnamehash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{authorbibnamehash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{authornamehash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{authorfullhash}{d99e653f6b867126827c93c258e1c41b}
-      \strng{authorfullhashraw}{d99e653f6b867126827c93c258e1c41b}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{In "Retos y oportunidades de América Latina y el Caribe en el comercio mundial pospandemia", KAS \& ECLAC \begin{footnotesize}[\href{https://www.kas.de/documents/7851262/29859533/Retos+y+oportunidade+de+Ame\%CC\%81rica+Latina+y+el+Caribe.pdf/45678561-68e5-db37-2965-a6052b96e887?version=1.0&t=1712937202313}{PDF}]\end{footnotesize}}
-      \field{title}{Tensiones comerciales entre China y Estados Unidos: Una oportunidad para América Latina y el Caribe en el mercado estadounidense?}
-      \field{year}{2024}
+      \field{note}{Revise and resubmit, IMF Economic Review \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/darvas-huertas-welslau-zettelmeyer-2025-stabilise-public-debt-wp.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{What will it take to stabilise public debt in advanced countries?}
+      \field{year}{2025}
       \true{nocite}
     \endentry
     \entry{fiscal_rules_demographics}{misc}{}{}
@@ -324,87 +119,51 @@
       \strng{authorfullhash}{c41c0b5761221580d20c5825fad663d3}
       \strng{authorfullhashraw}{c41c0b5761221580d20c5825fad663d3}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Bruegel Working Paper, \begin{footnotesize}[\href{https://www.bruegel.org/sites/default/files/2024-09/PB\%2022\%202024\_0.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{How demographic change will hit debt sustainability in European Union countries}
-      \field{year}{2024}
-      \true{nocite}
-    \endentry
-    \entry{social}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
-           family={Darvas},
-           familyi={D\bibinitperiod},
-           given={Zsolt},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=98aabf42a387b190e7bafaa304915f4b}{%
-           family={Zettelmeyer},
-           familyi={Z\bibinitperiod},
-           given={Jeromin},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{fullhash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{fullhashraw}{c41c0b5761221580d20c5825fad663d3}
-      \strng{bibnamehash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{authorbibnamehash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{authornamehash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{authorfullhash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{authorfullhashraw}{c41c0b5761221580d20c5825fad663d3}
-      \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Bruegel Working Paper, \begin{footnotesize}[\href{https://www.bruegel.org/sites/default/files/2024-03/WP\%2007.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{Incoporating the impact of social investment and reforms in the EU's new fiscal rules}
-      \field{year}{2024}
+      \field{note}{Journal of Policy Modeling 47(5), 1131--1157 \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/darvas-welslau-zettelmeyer-2025-demographic-change-debt-sustainability.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{Demographic change will hit public debt sustainability in European Union countries}
+      \field{year}{2025}
       \true{nocite}
     \endentry
-    \entry{fiscal_rules_pb}{misc}{}{}
+    \entry{eclac_series}{misc}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
-           family={Darvas},
-           familyi={D\bibinitperiod},
-           given={Zsolt},
-           giveni={Z\bibinitperiod},
+        {{un=0,uniquepart=base,hash=1142fccf4463a986bbb7f472f95d7c69}{%
+           family={Artecona},
+           familyi={A\bibinitperiod},
+           given={Raquel},
+           giveni={R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=98aabf42a387b190e7bafaa304915f4b}{%
-           family={Zettelmeyer},
-           familyi={Z\bibinitperiod},
-           given={Jeromin},
-           giveni={J\bibinitperiod},
+        {{un=0,uniquepart=base,hash=ab1d7c3aa2fca9a93efcc40a530f5c63}{%
+           family={Perrotti},
+           familyi={P\bibinitperiod},
+           given={Daniel\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{fullhash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{fullhashraw}{c41c0b5761221580d20c5825fad663d3}
-      \strng{bibnamehash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{authorbibnamehash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{authornamehash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{authorfullhash}{c41c0b5761221580d20c5825fad663d3}
-      \strng{authorfullhashraw}{c41c0b5761221580d20c5825fad663d3}
-      \field{extraname}{4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradate}{3}
+      \strng{namehash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{fullhash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{fullhashraw}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{bibnamehash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{authorbibnamehash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{authornamehash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{authorfullhash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{authorfullhashraw}{bbf31fe22b54772d3ebefa5238bc8478}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Bruegel Working Paper, \begin{footnotesize}[\href{https://www.bruegel.org/system/files/2024-07/PB\%2010\%202024.pdf}{PDF}]\end{footnotesize}}
-      \field{title}{The implications of the European Union’s new fiscal rules}
+      \field{note}{The World Economy 47(8), 2947--2969 \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/welslau-artecona-perrotti-2024-export-competition-china-lac.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{Export competition between China and Latin America and the Caribbean in the United States market}
       \field{year}{2024}
       \true{nocite}
     \endentry
@@ -449,15 +208,241 @@
       \strng{authornamehash}{e67c4239a2b815bdbc486b2f1a3f2612}
       \strng{authorfullhash}{3fcc5580a917e2f27c587ae6e2068cd0}
       \strng{authorfullhashraw}{3fcc5580a917e2f27c587ae6e2068cd0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Intereconomics, \begin{footnotesize}[\href{https://www.intereconomics.eu/contents/year/2024/number/5/article/debt-sustainability-analysis-in-reformed-eu-fiscal-rules.html}{PDF}]\end{footnotesize}}
+      \field{note}{Intereconomics 59(5), 276--283 \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/heimberger-welslau-et-al-2024-dsa-reformed-eu-fiscal-rules.pdf}{PDF}]\end{footnotesize}}
       \field{title}{Debt Sustainability Analysis in Reformed EU Fiscal Rules: The Effect of Fiscal Consolidation on Growth and Public Debt Ratios}
       \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{yearbook_chapter}{misc}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=98aabf42a387b190e7bafaa304915f4b}{%
+           family={Zettelmeyer},
+           familyi={Z\bibinitperiod},
+           given={Jeromin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=919bc85f8cfaa2d630239a7248417cc7}{%
+           family={Claeys},
+           familyi={C\bibinitperiod},
+           given={Grégory},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
+           family={Darvas},
+           familyi={D\bibinitperiod},
+           given={Zsolt},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e07b3040937734a765527ee6e80e385}{%
+           family={Zenios},
+           familyi={Z\bibinitperiod},
+           given={Stavros},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ccd0ba068f0f245caaa325aab7e00a55}
+      \strng{fullhash}{1cdef46c8c5c4a730805e67d5273901e}
+      \strng{fullhashraw}{1cdef46c8c5c4a730805e67d5273901e}
+      \strng{bibnamehash}{ccd0ba068f0f245caaa325aab7e00a55}
+      \strng{authorbibnamehash}{ccd0ba068f0f245caaa325aab7e00a55}
+      \strng{authornamehash}{ccd0ba068f0f245caaa325aab7e00a55}
+      \strng{authorfullhash}{1cdef46c8c5c4a730805e67d5273901e}
+      \strng{authorfullhashraw}{1cdef46c8c5c4a730805e67d5273901e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{In "A Yearbook on the Euro 2024" \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/darvas-welslau-zettelmeyer-2024-longer-term-fiscal-challenges.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{The longer-term fiscal challenges facing the European Union}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{kas_chapter}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1142fccf4463a986bbb7f472f95d7c69}{%
+           family={Artecona},
+           familyi={A\bibinitperiod},
+           given={Raquel},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab1d7c3aa2fca9a93efcc40a530f5c63}{%
+           family={Perrotti},
+           familyi={P\bibinitperiod},
+           given={Daniel\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{fullhash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{fullhashraw}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{bibnamehash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{authorbibnamehash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{authornamehash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{authorfullhash}{bbf31fe22b54772d3ebefa5238bc8478}
+      \strng{authorfullhashraw}{bbf31fe22b54772d3ebefa5238bc8478}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{In "Retos y oportunidades de América Latina y el Caribe en el comercio mundial pospandemia", KAS \& ECLAC \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/artecona-welslau-perrotti-2024-tensiones-comerciales.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{Tensiones comerciales entre China y Estados Unidos: Una oportunidad para América Latina y el Caribe en el mercado estadounidense?}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{empn_prem}{misc}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2153d78766c0d9ca6112ca1ece4c05e5}{%
+           family={Gottschalk},
+           familyi={G\bibinitperiod},
+           given={Saskia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71eeb7e97e34b639419e1df1bc0b1f13}{%
+           family={Wangenheim},
+           familyi={W\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod},
+           givenun=0,
+           prefix={von},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{b9c539bae0c65e11a044590b85f73a1c}
+      \strng{fullhash}{b9c539bae0c65e11a044590b85f73a1c}
+      \strng{fullhashraw}{b9c539bae0c65e11a044590b85f73a1c}
+      \strng{bibnamehash}{b9c539bae0c65e11a044590b85f73a1c}
+      \strng{authorbibnamehash}{b9c539bae0c65e11a044590b85f73a1c}
+      \strng{authornamehash}{b9c539bae0c65e11a044590b85f73a1c}
+      \strng{authorfullhash}{b9c539bae0c65e11a044590b85f73a1c}
+      \strng{authorfullhashraw}{b9c539bae0c65e11a044590b85f73a1c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{EMPN Policy Brief \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/gottschalk-et-al-2025-making-fiscal-space-policy-responsive.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{Making fiscal space policy-responsive}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{bruegel_germany}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
+           family={Darvas},
+           familyi={D\bibinitperiod},
+           given={Zsolt},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98aabf42a387b190e7bafaa304915f4b}{%
+           family={Zettelmeyer},
+           familyi={Z\bibinitperiod},
+           given={Jeromin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{fullhash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{fullhashraw}{c41c0b5761221580d20c5825fad663d3}
+      \strng{bibnamehash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{authorbibnamehash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{authornamehash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{authorfullhash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{authorfullhashraw}{c41c0b5761221580d20c5825fad663d3}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Bruegel Policy Brief \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/darvas-welslau-zettelmeyer-2025-germany-medium-term-fiscal-plan.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{What Germany's medium-term fiscal plan means for Europe}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{eu_borrowing}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=919bc85f8cfaa2d630239a7248417cc7}{%
+           family={Claeys},
+           familyi={C\bibinitperiod},
+           given={Grégory},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0e8178c3426f8eaa50b674306cc0f1f}{%
+           family={McCaffrey},
+           familyi={M\bibinitperiod},
+           given={Conor},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{365fa95576acf751a9a27cef471d2430}
+      \strng{fullhash}{365fa95576acf751a9a27cef471d2430}
+      \strng{fullhashraw}{365fa95576acf751a9a27cef471d2430}
+      \strng{bibnamehash}{365fa95576acf751a9a27cef471d2430}
+      \strng{authorbibnamehash}{365fa95576acf751a9a27cef471d2430}
+      \strng{authornamehash}{365fa95576acf751a9a27cef471d2430}
+      \strng{authorfullhash}{365fa95576acf751a9a27cef471d2430}
+      \strng{authorfullhashraw}{365fa95576acf751a9a27cef471d2430}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Briefing for the Committee on Budgets (BUDG), European Parliament \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/claeys-mccaffrey-welslau-2023-eu-borrowing-cost-bill-ep.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{An estimate of the European Union's long-term borrowing cost bill}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{fiscal_rules_wp}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3d17a58b8d85a30a8b0f894e8699a689}{%
+           family={Darvas},
+           familyi={D\bibinitperiod},
+           given={Zsolt},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98aabf42a387b190e7bafaa304915f4b}{%
+           family={Zettelmeyer},
+           familyi={Z\bibinitperiod},
+           given={Jeromin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{fullhash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{fullhashraw}{c41c0b5761221580d20c5825fad663d3}
+      \strng{bibnamehash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{authorbibnamehash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{authornamehash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{authorfullhash}{c41c0b5761221580d20c5825fad663d3}
+      \strng{authorfullhashraw}{c41c0b5761221580d20c5825fad663d3}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Bruegel Working Paper \begin{footnotesize}[\href{https://lennardwelslau.github.io/research/darvas-welslau-zettelmeyer-2023-quantitative-evaluation.pdf}{PDF}]\end{footnotesize}}
+      \field{title}{A quantitative evaluation of the European Commission's fiscal governance proposal}
+      \field{year}{2023}
       \true{nocite}
     \endentry
   \enddatalist

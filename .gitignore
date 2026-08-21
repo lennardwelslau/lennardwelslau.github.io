@@ -1,0 +1,20 @@
+# IMFER working paper: the whole conversion pipeline stays local.
+# Only the compiled PDF that the site links to is tracked
+# (research/darvas-huertas-welslau-zettelmeyer-2025-stabilise-public-debt-wp.pdf).
+research/IMFER_RR_to_convert/
+research/imfer-wp/
+
+# Danish CV
+CV_dk/
+
+# LaTeX build artefacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
