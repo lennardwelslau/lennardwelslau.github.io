@@ -31,8 +31,8 @@
   \printfield{title}%
   \setunit{\addcomma\space}\newblock
   \printtext{with}\addspace
-  \printnames{author}\addspace
-  (\printdate)%
+  \printnames{author}%
+  \iffieldundef{year}{}{\addspace(\printdate)}%   work in progress carries no year
   \setunit{\addcomma\space}\newblock
   \printfield{note}%
 }
@@ -74,8 +74,19 @@
   {\small #4}
   \vspace{\entrygap}}
 
-% \cvhead{institution} - institution heading with several roles beneath
-\newcommand{\cvhead}[1]{\cvrow{\textbf{#1}}{}}
+% \cvhead{institution} - institution heading with several roles beneath.
+% This deliberately does not use \cvrow: \cvrow leaves a trailing space so
+% that body text starts on the next line, and combined with the blank line
+% before the first role that opened a paragraph and left the institution
+% floating well above the role belonging to it. Closing the paragraph here
+% instead puts the first role the same distance below its heading as a
+% \cventry body sits below its own.
+\newcommand{\cvhead}[1]{%
+  \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \\
+  \end{tabular*}%
+  \par\nobreak
+}
 
 % \cvrole{role}{dates}{body} - a role under \cvhead
 \newcommand{\cvrole}[3]{\cvrow{\textit{\small #1}}{#2}
@@ -137,16 +148,8 @@ public international law, international relations}
 \cventry{Harvard University}{, Summer School}{06/2016--08/2016}
 {Courses in sustainability, science and technology studies}
 
-%--------------------------------------------------------- WORK IN PROGRESS
-\section{Work in Progress}
-\vspace{\rolegap}
-
-\begin{small}\textbf{Financial Frictions and Firm Growth}, with Tobias Renkin and Filip Rozsypal\end{small}
-
-\vspace{\entrygap}
-
 %------------------------------------------------------------ PUBLICATIONS
-\section{Selected Publications}
+\section{Selected Work}
 \vspace{\rolegap}
 \setlength{\bibitemsep}{1.4ex}
 \begin{refsection}[bibliography.bib]
