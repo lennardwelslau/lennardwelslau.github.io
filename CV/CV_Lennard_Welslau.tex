@@ -3,42 +3,17 @@
 %--------------------------------------------------------------- packages
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[british]{babel}   % must match the biblatex language strings below
-\usepackage{csquotes}
-\usepackage{titlesec}         % section title formatting
+\usepackage[british]{babel}
+\usepackage{titlesec}
 \usepackage{geometry}
-\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
-
-\usepackage[
-    backend=biber,
-    style=authoryear,
-    maxcitenames=3,
-    sorting=none,
-    natbib=true
-]{biblatex}
-\renewcommand*{\bibfont}{\small}
-\DefineBibliographyStrings{british}{andothers = {et al.}}
-
+\geometry{a4paper, left=1.8cm, right=1.8cm, top=1.7cm, bottom=1.7cm}
+\usepackage{xcolor}
 \usepackage{hyperref}         % load last
 \hypersetup{colorlinks=true, urlcolor=blue}
 \urlstyle{same}
 
-%------------------------------------------------------- bibliography style
-% Entries list co-authors only; the driver prints "<title>, with <authors> (<year>), <note>".
-\DeclareFieldFormat{title}{\textbf{#1}}
-
-\DeclareBibliographyDriver{custom}{%
-  \printfield{title}%
-  \setunit{\addcomma\space}\newblock
-  \printtext{with}\addspace
-  \printnames{author}%
-  \iffieldundef{year}{}{\addspace(\printdate)}%   work in progress carries no year
-  \setunit{\addcomma\space}\newblock
-  \printfield{note}%
-}
-\DeclareNameAlias{sortname}{given-family}
-\DeclareNameAlias{default}{given-family}
-\DeclareBibliographyAlias{misc}{custom}
+% General version: publications are written out by hand (no biblatex),
+% so the file compiles with plain pdflatex and the sections can be split freely.
 
 %----------------------------------------------------------------- layout
 \usepackage{fancyhdr}
@@ -46,41 +21,39 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\fancyfoot[C]{\footnotesize Last updated: \today}
+\newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year}
+\fancyfoot[C]{\footnotesize Last updated: \monthyear}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 \setlength{\parindent}{0pt}
 
-\newlength{\entrygap}      \setlength{\entrygap}{7pt}
+\newlength{\entrygap}      \setlength{\entrygap}{5pt}
 \newlength{\rolegap}       \setlength{\rolegap}{3pt}
 \newlength{\titlelift}     \setlength{\titlelift}{-5pt}
 
 \titleformat{\section}
   {\large\itshape\vspace{\titlelift}}{}{0em}{}
   [\titlerule\vspace{\titlelift}]
+\titleformat{\subsection}
+  {\small\scshape}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+
+\newcommand{\todo}[1]{\textcolor{red}{[#1]}}
 
 %---------------------------------------------------------------- entries
-% One full-width row: bold/italic label on the left, dates flush right.
-% The row fills \textwidth, so whatever follows starts on the next line.
 \newcommand{\cvrow}[2]{%
   \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
     #1 & {\footnotesize #2} \\
   \end{tabular*}
 }
 
-% \cventry{institution}{, role}{dates}{body} - a standalone position
+% \cventry{institution}{, role}{dates}{body}
 \newcommand{\cventry}[4]{\cvrow{\textbf{#1}\textit{\small #2}}{#3}
   {\small #4}
   \vspace{\entrygap}}
 
-% \cvhead{institution} - institution heading with several roles beneath.
-% This deliberately does not use \cvrow: \cvrow leaves a trailing space so
-% that body text starts on the next line, and combined with the blank line
-% before the first role that opened a paragraph and left the institution
-% floating well above the role belonging to it. Closing the paragraph here
-% instead puts the first role the same distance below its heading as a
-% \cventry body sits below its own.
+% \cvhead{institution}
 \newcommand{\cvhead}[1]{%
   \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
     \textbf{#1} & \\
@@ -88,23 +61,32 @@
   \par\nobreak
 }
 
-% \cvrole{role}{dates}{body} - a role under \cvhead
+% \cvrole{role}{dates}{body}
 \newcommand{\cvrole}[3]{\cvrow{\textit{\small #1}}{#2}
   {\small #3}}
-
-% \cvrolelast{role}{dates}{body} - the final role under \cvhead
 \newcommand{\cvrolelast}[3]{\vspace{\rolegap}\cvrole{#1}{#2}{#3}\vspace{\entrygap}}
 
 % \myitem{text} - dash-led bullet with hanging indent
 \newcommand{\myitem}[1]{\hangindent=1em\hangafter=1\textbf{--}~#1\par}
 
+% \pub{title}{with ... (year), outlet [links]} - one publication, hanging indent
+\newcommand{\blacklink}[2]{\href{#1}{\textcolor{black}{#2}}}
+% \pub[url]{title}{rest} - title becomes a black hyperlink when a url is given
+\newcommand{\pub}[3][]{{\hangindent=1.5em\hangafter=1%
+  \textbf{\if\relax\detokenize{#1}\relax #2\else\blacklink{#1}{#2}\fi}, #3\par}\vspace{0.7ex}}
+\newcommand{\pdf}[1]{{\footnotesize[\href{#1}{PDF}]}}
+\newcommand{\site}{https://lennardwelslau.github.io/research/}
+
 \begin{document}
 
+%----------------------------------------------------------------- NAME
 \begin{center}
-    {\Large Lennard Alexander Welslau} \\
+    {\Large Lennard Alexander Welslau} \\[2pt]
+    PhD Fellow, University of Copenhagen and Danmarks Nationalbank \\
     \href{mailto:lennard.welslau@gmail.com}{lennard.welslau@gmail.com} $|$
     \href{https://lennardwelslau.github.io/}{lennardwelslau.github.io}
 \end{center}
+
 
 %--------------------------------------------------------------- EDUCATION
 \section{Education}
@@ -113,109 +95,139 @@
 
 \cvrole{PhD Economics}{since 09/2024}
 {\\
-\myitem{Focus: Macroeconomics; Advisor: Søren Hove Ravn}
-\myitem{Courses in advanced economic theory, macroeconometrics, microeconometrics,
+\myitem{Advisor: Søren Hove Ravn}
+\myitem{PhD-level courses in economic theory, macroeconometrics, microeconometrics,
 dynamic programming, economic growth, business cycles, heterogeneous agent models}
 }
 
 \cvrolelast{MSc Economics}{09/2019--09/2022}
 {\\
-\myitem{Thesis: Wage Rigidity and Shock Transmission in Open Economy HANK Models;
-supervised by Jeppe Druedahl; highest grade (12)
-\begin{footnotesize}[\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5474969}{PDF}]\end{footnotesize}}
-\myitem{Courses in economic theory, econometrics, public finance,
-international political economy, economic sociology}
-\myitem{GPA: 10.8 (top decile)}
+\myitem{Thesis: \blacklink{\site welslau-2022-wage-flexibility-hank.pdf}{Wage Flexibility and Household Heterogeneity in a Small Open Economy}; grade 12 (highest)}
+\myitem{Courses in advanced microeconomics, macroeconomics, and econometrics, international political economy,
+public finance; GPA: 10.8 (top decile)}
 }
 
 \cventry{New York University}{, Visiting PhD Student}{09/2026--01/2027}
-{Department of Economics; host: Simon Gilchrist}
+{Department of Economics; host: Simon Gilchrist \\
+\myitem{Course in Empirical Monetary and Macroeconomics; macroeconomics reading group}}
 
 \cventry{University College Freiburg}{, BA Liberal Arts and Sciences}{10/2014--08/2018}
 {\\
-\myitem{Thesis: An Application of Lakatosian Methodology to Finance Theory;
-supervised by Lars Feld; highest grade (1.0)
-\begin{footnotesize}[\href{https://lennardwelslau.github.io/research/welslau-2018-lakatos-finance-theory-ba-thesis.pdf}{PDF}]\end{footnotesize}}
-\myitem{Courses in mathematics, statistics, economic theory, finance,
-philosophy of science, comparative politics, political theory, sociology,
-public international law, international relations}
-\myitem{GPA: 1.5 (excellent)}
+\myitem{Thesis: \blacklink{\site welslau-2018-lakatos-finance-theory-ba-thesis.pdf}{An Application of Lakatosian Methodology to Finance Theory}; grade 1.0 (highest)}
+\myitem{Courses include economic theory, statistics, mathematics, philosophy of science, political theory,
+comparative politics, international relations, and international law; GPA: 1.5 (excellent)}
+\myitem{Exchange semester, University of Buenos Aires (2017); Summer School, Harvard University (2016)}
 }
 
-\cventry{Universidad de Buenos Aires}{, Exchange}{03/2017--07/2017}
-{Courses in development economics, international economics, and human rights}
+%------------------------------------------------------------- RESEARCH
+\section{Research}
 
-\cventry{Harvard University}{, Summer School}{06/2016--08/2016}
-{Courses in sustainability, science and technology studies}
+\subsection{Work in progress}
 
-%------------------------------------------------------------ PUBLICATIONS
-\section{Selected Work}
-\vspace{\rolegap}
-\setlength{\bibitemsep}{1.4ex}
-\begin{refsection}[bibliography.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\pub{Bank Credit Supply and Entrepreneurship}{with Tobias Renkin and Filip Rozsypal\newline
+{\small We study how bank credit supply at founding affects firm entry and performance. We match credit
+supply shocks at Danish banks to potential entrepreneurs through their pre-existing personal banking relationship.
+A one standard deviation increase in credit supply raises the rate at which individuals start firms by 3\%, and
+firms founded under higher credit supply have higher revenue and employment for most of the following decade.}}
 
-%--------------------------------------------------------- WORK EXPERIENCE
-\section{Work Experience}
+\subsection{Publications}
+
+\pub[\site darvas-welslau-zettelmeyer-2025-sovereign-debt-fiscal-integration.pdf]{Sovereign Debt and Fiscal Integration in the European Union}{with Zsolt Darvas and
+Jeromin Zettelmeyer (2025), \textit{Journal of Economic Perspectives} 39(4), 49--74}
+
+\pub[\site darvas-welslau-zettelmeyer-2025-demographic-change-debt-sustainability.pdf]{Demographic change will hit public debt sustainability in European Union countries}{with
+Zsolt Darvas and Jeromin Zettelmeyer (2025), \textit{Journal of Policy Modeling} 47(5), 1131--1157}
+
+\pub[\site welslau-artecona-perrotti-2024-export-competition-china-lac.pdf]{Export competition between China and Latin America and the Caribbean in the United States
+market}{with Raquel Artecona and Daniel E. Perrotti (2024), \textit{The World Economy} 47(8), 2947--2969}
+
+\subsection{Revise and resubmit}
+
+\pub[\site darvas-huertas-welslau-zettelmeyer-2026-stabilise-public-debt-wp.pdf]{What will it take to stabilise public debt in advanced countries?}{with Zsolt Darvas,
+Gonzalo Huertas and Jeromin Zettelmeyer (2026), \textit{IMF Economic Review}}
+
+\subsection{Selected policy work}
+
+\pub[\site welslau-2026-sensitivity-eu-dsa-wp.pdf]{Quantifying the Sensitivity of EU Debt Sustainability Analysis}{working paper (2026)}
+
+\pub[\site darvas-welslau-zettelmeyer-2025-germany-medium-term-fiscal-plan.pdf]{What Germany's medium-term fiscal plan means for Europe}{with Zsolt Darvas and
+Jeromin Zettelmeyer (2025), Bruegel Policy Brief}
+
+\pub[\site darvas-welslau-zettelmeyer-2024-longer-term-fiscal-challenges.pdf]{The longer-term fiscal challenges facing the European Union}{with Jeromin Zettelmeyer,
+Grégory Claeys, Zsolt Darvas and Stavros Zenios (2024), in \textit{A Yearbook on the Euro 2024}}
+
+\pub{Distributional Effects of Climate Policy}{with Juan Mejino López and Georg Zachmann, in
+\textit{Handbook on the Welfare State and Climate Change}, forthcoming}
+
+
+%-------------------------------------------------------- PRESENTATIONS
+\section{Presentations}
+
+{\small
+\textbf{2026:} NYU Student Macro Lunch; Danmarks Nationalbank Research Brownbag;
+University of Copenhagen Internal Macro Seminar \\[2pt]
+\textbf{2024:} European Parliament Committee on Budgets (BUDG);
+FEPS and Friedrich-Ebert-Stiftung expert meeting;
+Danish Graduate Programme in Economics (DGPE) Conference; Bruegel Research Seminar \\[2pt]
+\textbf{2023:} German Federal Ministry for Economic Cooperation and Development (BMZ);
+Bruegel Research Seminar \\[2pt]
+\textbf{2022:} Bruegel Research Seminar
+}
+
+%--------------------------------------------------------- EXPERIENCE
+\section{Professional Experience}
 
 \cventry{Danmarks Nationalbank}{, Resident PhD Fellow}{since 09/2024}
 {Research unit; firm dynamics, financial frictions, heterogeneous agent models}
 
-\cventry{European Macro Policy Network (EMPN)}{, Policy Fellow (pro bono)}{since 09/2024}
-{Co-authored publication on potential output modelling, advised on DSA modelling}
+\cventry{European Macro Policy Network (EMPN)}{, Policy Fellow}{since 09/2024}
+{Advised on debt sustainability and potential output modelling; co-authored policy brief on fiscal space}
 
 \cvhead{Bruegel}
 
 \cvrole{Research Contractor}{09/2024--09/2025}
-{Co-authored publications on German fiscal policy, debt sustainability,
-and EU fiscal integration}
+{German and European fiscal policy, debt sustainability, EU fiscal integration}
 
 \cvrolelast{Research Analyst}{10/2022--09/2024}
-{Economic and statistical modelling; co-authored publications on macroeconomics,
-economic governance, trade, and inequality;
-developed Bruegel's debt sustainability analysis;
-automated data collection and web apps;
-research presented at the ECB, ECOFIN, IMF, European Parliament, and national governments
-(Python, R, Excel)}
+{Developed Bruegel's debt sustainability analysis model and \blacklink{https://www.bruegel.org/dataset/inflation-inequality-european-union-and-its-drivers}{inflation inequality tracker}; research on EU economic governance,
+sovereign debt, trade, and inequality;
+co-authored work presented at IMF, ECB, Informal ECOFIN}
 
 \cvhead{United Nations ECLAC}
 
 \cvrole{Economic Affairs Consultant}{06/2021--01/2022}
-{Published paper on export competition using structural gravity models,
-co-authored book chapter on US--China trade tensions}
+{Structural gravity models, export competition, US--China trade tensions}
 
 \cvrolelast{Carlo Schmid Fellow}{09/2020--04/2021}
-{Merit-based scholarship program; prepared statistical analyses of trade data,
-literature reviews, and briefs on US economic policy (Stata, Python)}
+{Trade data analysis; US trade and development policy}
 
-\cventry{Copenhagen Business School}{, Research Assistant}{01/2020--09/2021}
-{Project on urban circular economy; prepared literature reviews and
-resources for policymakers}
+% Optional, one line if included (see CV_Review.md):
+% \cventry{CountryRisk.io}{, Consultant}{MM/YYYY--MM/YYYY}
+% {Built a stochastic debt sustainability model for the CountryRisk.io Insights platform}
 
 \cventry{European Central Bank}{, Trainee}{09/2018--03/2019}
-{Market Infrastructure and Payments; test and release management of EU payment systems;
-prepared and presented statistics, strategy, and legal documents for senior management (Excel)}
+{Directorate General Market Infrastructure and Payments}
 
-\cventry{University of Freiburg}{, Research Assistant}{03/2018--09/2018}
-{Chair of economic policy; literature reviews and data analysis (Excel, R)}
+\cventry{Student research assistant positions}{}{}
+{Copenhagen Business School (2020--2021); University of Freiburg, Chair of Economic Policy (2018)}
 
 %------------------------------------------------------------------ OTHER
-\section{Miscellaneous}
+\section{Other}
 
-\cventry{Languages}{}{}
-{\\
-\myitem{German (native); English, Spanish (fluent); Danish, French (basic); Latin (diploma)}
-\myitem{Python, Stata, Excel (advanced); Matlab, R, Julia, Git, SQL, Java, HTML, CSS, \LaTeX\space(intermediate)}
-}
+\cventry{Refereeing}{}{}
+{Public Finance Review; International Economics and Economic Policy}
 
 \cventry{Awards and grants}{}{}
+{Full PhD scholarship, Danmarks Nationalbank; Bikuben Foundation Fellow; William Demant Foundation grant;
+UCPH International scholarship;
+Carlo Schmid scholarship (DAAD, German Academic Scholarship Foundation); DAAD scholarship}
+
+\cventry{Skills}{}{}
 {\\
-Full PhD scholarship by Danmarks Nationalbank,
-Bikuben Foundation Fellow, William Demant Foundation grant,
-Carlo Schmid scholarship (DAAD, German Academic Scholarship Foundation),
-DAAD scholarship, UCPH International scholarship
+\myitem{Programming: Python, Stata (advanced); R, Julia, Matlab, SQL, Git}
+\myitem{Data: Danish administrative registers (firm, bank, household, and customs microdata);
+international trade data}
+\myitem{Languages: German (native); English, Spanish (fluent); Danish, French (basic)}
 }
 
 \end{document}
